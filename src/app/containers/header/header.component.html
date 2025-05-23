@@ -2,5 +2,6 @@
 <div class="list-sections">
     <p class="section" *ngFor="let section of sections">{{ section | uppercase }}</p>
 </div>
-<p-button icon="pi pi-moon" severity="secondary"/>
+<p-button icon="{{icon}}" (onClick)="toggleDarkMode()" severity="contrast"/>
+
 

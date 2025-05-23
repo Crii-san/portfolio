@@ -4,12 +4,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
   
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: rgb(1, 17, 34);;
 }
 
 app-root {
@@ -18,4 +19,7 @@ app-root {
     flex-direction: column;
 }
 
+.my-app-dark body {
+    color: white; 
+}
   
