@@ -1,8 +1,11 @@
 :host {
     display: flex;
     flex-direction: row;
-    background-color: lightgray;
+    background-color: white;
+    background-color: rgb(237, 246, 255);
     padding: 1.5em;
+    align-items: center;
+    color: rgb(0, 128, 255);
 }
 
 .list-sections {
