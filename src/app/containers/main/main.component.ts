@@ -8,5 +8,7 @@ import { CompetencesComponent } from "../../competences/competences.component";
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-  
+  public test() {
+    console.log('coucou');
+  }
 }

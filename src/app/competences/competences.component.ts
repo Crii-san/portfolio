@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-competences',
-  imports: [CardModule, CommonModule],
+  imports: [CommonModule],
   templateUrl: './competences.component.html',
   styleUrl: './competences.component.css'
 })

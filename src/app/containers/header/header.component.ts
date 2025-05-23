@@ -1,11 +1,10 @@
 import { CommonModule, UpperCasePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, UpperCasePipe, ButtonModule],
+  imports: [CommonModule, UpperCasePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -14,22 +13,23 @@ export class HeaderComponent implements OnInit {
   public icon!: string;
 
   ngOnInit() {
-    const element = document.querySelector('html');
-    if (element?.classList.contains('my-app-dark')) {
-      this.icon = 'pi pi-sun';
+    const element = document.querySelector('body');
+    if (element?.classList.contains('dark-mode')) {
+      this.icon = 'light_mode';
     } else {
-      this.icon = 'pi pi-moon';
+      this.icon = 'dark_mode';
     }
   }
 
   public toggleDarkMode(): void {
-    const element = document.querySelector('html');
-    if (element?.classList.contains('my-app-dark')) {
-      this.icon = 'pi pi-moon';
-      element?.classList.remove('my-app-dark');
+    console.log('test');
+    const element = document.querySelector('body');
+    if (element?.classList.contains('dark-mode')) {
+      this.icon = 'light_mode';
+      element?.classList.remove('dark-mode');
     } else {
-      this.icon = 'pi pi-sun';
-      element?.classList.toggle('my-app-dark');
+      this.icon = 'dark_mode';
+      element?.classList.toggle('dark-mode');
     }
   }
 }

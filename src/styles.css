@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: rgb(1, 17, 34);;
 }
 
 app-root {
@@ -19,7 +18,8 @@ app-root {
     flex-direction: column;
 }
 
-.my-app-dark body {
+.dark-mode {
     color: white; 
+    background-color: #1d1e1fe6;
 }
   
