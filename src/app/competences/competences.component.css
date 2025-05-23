@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.competence {
+    background-color: white;
+}
+
+.languages {
+    display: flex;
+}
