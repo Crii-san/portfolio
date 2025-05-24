@@ -1,9 +1,19 @@
 <h1 class="titre-page"> Christelle Souka </h1>
-<div class="list-sections">
-    <p class="section" *ngFor="let section of sections">{{ section | uppercase }}</p>
+
+<nav class="list-sections large-screen">
+    <a href="#" class="section" *ngFor="let section of sections">{{ section }}</a>
+</nav>
+
+<div class="end-nav-bar-options">
+    <button class="switch-theme-button" (click)="toggleDarkMode()"> 
+        <span class="material-icons">{{ mode }}</span>
+    </button>
+    
+    <button class="burger-menu small-screen">
+        <span class="material-icons">menu</span>
+    </button>
 </div>
-<button (click)="toggleDarkMode()"> 
-    <span class="material-icons">{{ icon }}</span>
-</button>
+
+
 
 
