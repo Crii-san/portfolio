@@ -1,5 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    color-scheme: light;
+    --primary: white;
+    --secondary: rgb(225, 225, 225) ;
+    --tertiary: rgb(241, 241, 241);
+    --text: #2b2b2b;
+}
+
+body.dark-mode {
+    color-scheme: dark;
+    --primary: #212121;
+    --secondary: #383434;
+    --tertiary: #181818;
+    --text: white;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -8,18 +24,13 @@ html, body {
   
 body {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 app-root {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
-.dark-mode {
-    color: white; 
-    background-color: #1d1e1fe6;
-}
+
   
