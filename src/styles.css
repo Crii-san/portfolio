@@ -3,8 +3,8 @@
 :root {
     color-scheme: light;
     --primary: white;
-    --secondary: rgb(225, 225, 225) ;
-    --tertiary: rgb(241, 241, 241);
+    --secondary: rgb(241, 241, 241) ;
+    --tertiary: rgb(225, 225, 225);
     --text: #2b2b2b;
 }
 

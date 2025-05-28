@@ -1,4 +1,9 @@
-<app-header></app-header>
-<app-main></app-main>
-<app-footer></app-footer>
-<router-outlet />
+<app-header [(showBurgerMenu)]="showBurgerMenu"></app-header>
+@if (showBurgerMenu) {
+    <app-burger-menu (closeBurgerMenu)="closeBurgerMenu()"></app-burger-menu>
+} @else {
+    <app-main></app-main>
+    <app-footer></app-footer>
+    <router-outlet />
+}
+
