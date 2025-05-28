@@ -5,11 +5,11 @@
 </nav>
 
 <div class="end-nav-bar-options">
-    <button class="switch-theme-button" (click)="toggleDarkMode()"> 
-        <span class="material-icons">{{ mode }}</span>
+    <button class="switch-theme-button" (click)="onToggleDarkMode()"> 
+        <span class="material-icons">{{ theme }}</span>
     </button>
     
-    <button class="burger-menu small-screen">
+    <button class="burger-menu small-screen" (click)="onToggleBurgerMenu()">
         <span class="material-icons">menu</span>
     </button>
 </div>

@@ -1,5 +1,5 @@
-import { CommonModule, UpperCasePipe } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,25 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public sections: string[] = ['À propos', 'Compétences', 'Études', 'Expériences', 'Projets', 'Contact'];
-  public mode!: string;
+  public theme: string = 'light_mode';
+  private selectorBody!: HTMLBodyElement;
+
+  @Output() showBurgerMenuChange: EventEmitter<boolean> = new EventEmitter();
+  @Input() showBurgerMenu: boolean = false;
 
   ngOnInit() {
-    const element = document.querySelector('body');
-    if (element?.classList.contains('dark-mode')) {
-      this.mode = 'light_mode';
+    this.selectorBody = document.querySelector('body')!;
+  }
+
+  public onToggleDarkMode(): void {
+    if (this.selectorBody.classList.contains('dark-mode')) {
+      this.theme = 'dark_mode';
+      this.selectorBody.classList.remove('dark-mode');
     } else {
-      this.mode = 'dark_mode';
+      this.theme = 'light_mode';
+      this.selectorBody.classList.toggle('dark-mode');
     }
   }
 
-  public toggleDarkMode(): void {
-    const element = document.querySelector('body');
-    if (element?.classList.contains('dark-mode')) {
-      this.mode = 'dark_mode';
-      element?.classList.remove('dark-mode');
-    } else {
-      this.mode = 'light_mode';
-      element?.classList.toggle('dark-mode');
-    }
+  public onToggleBurgerMenu(): void {
+    this.showBurgerMenu = !this.showBurgerMenu;
+    this.showBurgerMenuChange.emit(this.showBurgerMenu);
   }
 }
