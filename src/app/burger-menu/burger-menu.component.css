@@ -31,7 +31,7 @@ button {
     border: none;
     align-items: center;
     padding: 0.5em;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 button:hover, a:hover {
@@ -39,7 +39,7 @@ button:hover, a:hover {
     color: var(--text);
     
     padding: 0.5em;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 footer {

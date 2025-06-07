@@ -1,1 +1,12 @@
-<p>contact works!</p>
+<h2>Contact</h2>
+
+<div class="contacts-list">
+    <div *ngFor="let contact of contactModes" class="contact-mode">
+        <p>{{contact.type | uppercase}}</p>
+        <a [href]="contact.link"> 
+            <img [src]="contact.icon"/>
+            {{ contact.croppedLink }}
+        </a>
+    </div>
+</div>
+
