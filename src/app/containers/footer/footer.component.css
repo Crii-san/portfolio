@@ -3,4 +3,6 @@
     color: var(--text);
 
     display: flex;
+    justify-content: center;
+    padding: 2em 10em 2em 10em; 
 }
