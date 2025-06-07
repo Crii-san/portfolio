@@ -6,6 +6,7 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
+    padding-top: 3em;
 }
 
 .section-container {
@@ -46,4 +47,19 @@ footer {
     display: flex;
     justify-content: center;
     padding: 2em;
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding-top: 5em ;
+    }
+
+    a {
+        padding: 0;
+    }
+
+    .section-container {
+        padding: 1.5em;
+    }
 }

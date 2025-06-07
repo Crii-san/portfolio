@@ -2,30 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;    
-    padding: 2em 10em 3em 10em;
+    padding: 2.5em 10em 3em 10em;
 }
 
-/* Big screens */
-@media screen and (min-width: 1300px) {
+h2 {
+    padding-bottom: 1em;
+}
+
+/* Large screens */
+@media screen and (min-width: 1000px) {
     .section-container {
         display: flex;
         flex-direction: row;
-    }
-}
-
-/* Small screens */
-@media screen and (max-width: 1300px) {
-    .section-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: justify;
     }
 }
 
 .photo {
     width: fit-content;
     display: flex;
-    padding: 0em 3em 0em 3em;
+    padding: 0 3em 0 3em;
 }
 
 img {
@@ -33,6 +29,20 @@ img {
     border-radius: 20px;
     border: solid 1px var(--tertiary);
     margin: auto;
+}
+
+/* Small screens */
+@media screen and (max-width: 1000px) {
+    :host {
+        padding: 2em 5em 2em 5em;
+    }
+    
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
 }
 
 /* Phones */

@@ -4,3 +4,7 @@
     align-items: center;
     padding: 2em 10em 3em 10em;  
 }
+
+h2 {
+    padding-bottom: 1em;
+}

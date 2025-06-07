@@ -13,13 +13,7 @@
     right: 0;
 }
 
-/* Phones */
-@media screen and (max-width: 800px) {
-    :host {
-        padding: 0.5em 2em 0.5em 2em;
-    }
-}
-
+/* Large screens */
 @media screen and (min-width: 1300px) {
     .small-screen { display: none; }
     .large-screen { display: block; }
@@ -34,7 +28,12 @@
     }
 }
 
+/* Small screens */
 @media screen and (max-width: 1300px) {
+    :host {
+        padding: 1em 5em 1em 5em;
+    }
+
     .small-screen { display: block; }
     .large-screen { display: none; }
 
@@ -53,6 +52,17 @@
         color: var(--text);
         padding: 0.5em;
         border-radius: 10px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 800px) {
+    :host {
+        padding: 0.5em 2em 0.5em 2em;
+    }
+
+    h1 {
+        font-size: x-large;
     }
 }
 
