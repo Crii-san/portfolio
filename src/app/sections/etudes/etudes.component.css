@@ -1,0 +1,6 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 10em 2em 10em;  
+}
