@@ -1,6 +1,15 @@
-<h2>Études</h2>
+<h2 id="etudes">Études</h2>
 
-<p id="etudes"> 
-    Section en construction
-    <span class="material-icons">construction</span> 
-</p>
+<div class="etudes-container">
+    <div class="etude" *ngFor="let etude of etudes"> 
+        <div class="etude-data">
+            <h3>{{etude.formation}}</h3>
+            <ul>
+                <li *ngIf="etude.parcours">{{etude.parcours}}</li>
+                <li>{{etude.etablissement}}</li>
+                <li>{{etude.lieu}}</li>
+            </ul>
+        </div>
+        <span>{{etude.dates}}</span>
+    </div>
+</div>
