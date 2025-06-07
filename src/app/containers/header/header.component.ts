@@ -1,6 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
+interface section {
+  name: string,
+  link: string
+}
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -9,7 +14,33 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
-  public sections: string[] = ['À propos', 'Compétences', 'Études', 'Expériences', 'Projets', 'Contact'];
+  public sections: section[] = [
+    {
+      name :'À propos',
+      link: 'presentation'
+    }, 
+    {
+      name :'Compétences',
+      link: 'competences'
+    },
+    {
+      name :'Études',
+      link: 'etudes'
+    },
+    {
+      name :'Expériences',
+      link: 'experiences'
+    },
+    {
+      name :'Projets',
+      link: 'projets'
+    },
+    {
+      name :'Contact',
+      link: 'contact'
+    }
+  ]
+
   public theme: string = 'light_mode';
   private selectorBody!: HTMLBodyElement;
 

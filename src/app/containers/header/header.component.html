@@ -1,7 +1,7 @@
 <h1 class="titre-page"> Christelle Souka </h1>
 
 <nav class="list-sections large-screen">
-    <a href="#" class="section" *ngFor="let section of sections">{{ section }}</a>
+    <a href="#{{section.link}}" class="section" *ngFor="let section of sections">{{ section.name }}</a>
 </nav>
 
 <div class="end-nav-bar-options">
