@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CompetencesComponent } from "../../competences/competences.component";
-import { ContactComponent } from "../../contact/contact.component";
+import { CompetencesComponent } from "../../sections/competences/competences.component";
+import { ContactComponent } from "../../sections/contact/contact.component";
 
 @Component({
   selector: 'app-main',
