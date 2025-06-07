@@ -5,12 +5,12 @@ interface Contact {
   type: string,
   link: string,
   croppedLink: string,
-  icon: string|null
+  icon: string
 }
 
 @Component({
   selector: 'app-contact',
-  imports: [NgFor, NgIf, UpperCasePipe],
+  imports: [NgFor, UpperCasePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

@@ -1,40 +1,45 @@
 :host {
     background-color: var(--secondary);
-    padding: 1em 10em 1em 10em;  
+    padding: 1em 10em 2em 10em;  
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-img {
-    width: 4em;
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 a {
     text-decoration: none;
     color: var(--text);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.contact-mode {
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    padding: 1em;
     width: 20em;
     justify-content: space-between;
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+.contact:hover {
+    background-color: var(--tertiary);
 }
 
 p {
     font-weight: bold;
 }
 
-.contacts-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+img {
+    height: 3em;
+    padding-bottom: 0.5em;
 }
+
+
+
