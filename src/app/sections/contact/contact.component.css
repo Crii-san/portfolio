@@ -41,7 +41,9 @@ p {
 }
 
 img {
-    height: 3em;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
     padding-bottom: 0.5em;
 }
 

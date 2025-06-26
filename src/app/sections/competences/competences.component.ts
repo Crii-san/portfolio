@@ -142,7 +142,7 @@ export class CompetencesComponent {
     },
     {
       name: "Prisma",
-      logo: "assets/competences/database/prisma.jpg",
+      logo: "assets/competences/database/prisma.png",
       link: "https://www.prisma.io/",
     },
   ];

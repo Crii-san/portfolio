@@ -10,8 +10,8 @@
 
 body.dark-mode {
     color-scheme: dark;
-    --primary: #212121;
-    --secondary: #383434;
+    --primary: #383434;
+    --secondary: #212121;
     --tertiary: #181818;
     --text: white;
 }
