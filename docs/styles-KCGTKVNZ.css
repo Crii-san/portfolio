@@ -1,0 +1,1 @@
+:root{color-scheme:light;--primary: white;--secondary: rgb(241, 241, 241);--tertiary: rgb(225, 225, 225);--text: #2b2b2b}body.dark-mode{color-scheme:dark;--primary: #212121;--secondary: #383434;--tertiary: #181818;--text: white}html,body{height:100%;margin:0;padding:0}body,app-root{display:flex;flex:1;flex-direction:column}
