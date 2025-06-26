@@ -9,3 +9,94 @@
 h2 {
     padding-bottom: 1em;
 }
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.experience {
+    display: flex;
+    flex: 1;
+    border: solid 1px var(--tertiary);
+    border-radius: 20px;
+    padding: 1em 3em 1em 3em;
+    margin: 1em 0 1em 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.experience-data {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 0 5em;
+    flex: 1;
+}
+
+h3, h4 {
+    padding: 0.5em 0 0.5em 0;
+    margin: 0;
+}
+
+a {
+    width: 200px;
+}
+
+img {
+    width: 200px;
+    object-fit: contain;
+}
+
+span {
+    width: 220px;
+    text-align: end;
+}
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    :host {
+        padding: 1em 5em 2em 5em;
+    }
+
+    .experience {
+        padding: 1em 0 1em 0;
+        flex-direction: column;
+    }
+
+    .experience-data {
+        padding: 1em 3em 0 3em;
+    }
+
+    span {
+        padding: 1em 0 1em 0;
+        text-align: center;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: 0.5em 2em 0.5em 2em;
+    }
+
+    .experience {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .experience-data {
+        padding: 1em 1em 0 1em;
+    }
+    
+    span {
+        text-align: center;
+        padding-bottom: 2em;
+    }
+
+    img {
+        padding-top: 1em;
+    }
+}
