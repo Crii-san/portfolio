@@ -31,17 +31,20 @@ h3 {
 a {
     text-decoration: none;
     color: var(--text);
+    display: flex;
+    padding: 2em 2.5em 2em 2.5em;
+    margin: 1em;
+    width: 100px;
+    border-radius: 20px;
+    background-color: var(--primary);
 }
 
 .competence {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    background-color: var(--primary);
     align-items: center;
     justify-content: space-between;
-    border-radius: 20px;
-    padding: 2em 3em 2em 3em;
-    margin: 1em;
 }
 
 img {

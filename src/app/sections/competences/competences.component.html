@@ -27,9 +27,25 @@
 
     <section class="database">
         <h3>Bases de données</h3>
+        <div class="competence-list">
+            <a *ngFor="let db of database" [href]="db.link" >
+                <div class="competence" >
+                    <img [src]="db.logo">
+                    {{db.name}}
+                </div>
+            </a>
+        </div>
     </section>
 
-    <section class="tools">
-        <h3>Outils</h3>
+    <section class="divers">
+        <h3>Divers</h3>
+        <div class="competence-list">
+            <a *ngFor="let d of divers" [href]="d.link" >
+                <div class="competence" >
+                    <img [src]="d.logo">
+                    {{d.name}}
+                </div>
+            </a>
+        </div>
     </section>
 </div>

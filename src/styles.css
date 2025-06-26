@@ -28,5 +28,10 @@ body, app-root {
     flex-direction: column;
 }
 
+html {
+  scroll-padding-top: 150px; 
+}
+
+
 
   
