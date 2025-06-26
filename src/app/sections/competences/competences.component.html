@@ -1,4 +1,35 @@
 <h2 id="competences">Compétences</h2>
-<div class="langages">
-    <div class="competence" *ngFor="let competence of competences">{{ competence }}</div>
+
+<div class="competences-container">
+    <section class="languages">
+        <h3>Langages</h3>
+        <div class="competence-list">
+            <a *ngFor="let language of languages" [href]="language.link" >
+                <div class="competence" >
+                    <img [src]="language.logo">
+                    {{language.name}}
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="frameworks">
+        <h3>Frameworks & Bibliothèques</h3>
+        <div class="competence-list">
+            <a *ngFor="let framework of frameworks" [href]="framework.link" >
+                <div class="competence" >
+                    <img [src]="framework.logo">
+                    {{framework.name}}
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="database">
+        <h3>Bases de données</h3>
+    </section>
+
+    <section class="tools">
+        <h3>Outils</h3>
+    </section>
 </div>

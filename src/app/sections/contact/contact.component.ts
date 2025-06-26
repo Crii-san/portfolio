@@ -1,4 +1,4 @@
-import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
+import { NgFor, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 interface Contact {
@@ -20,7 +20,7 @@ export class ContactComponent {
       type: 'linkedin',
       link: 'https://www.linkedin.com/in/christelle-souka/',
       croppedLink: 'linkedin.com/in/christelle-souka/',
-      icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png'
+      icon: 'assets/contact/linkedin.webp'
     },
     {
       type: 'email',
@@ -32,7 +32,7 @@ export class ContactComponent {
       type: 'github',
       link: 'https://github.com/Crii-san',
       croppedLink: 'github.com/Crii-san',
-      icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png'
+      icon: 'assets/contact/github.png'
     }
   ];
 }

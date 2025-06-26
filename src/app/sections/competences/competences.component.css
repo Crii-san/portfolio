@@ -9,3 +9,78 @@
 h2 {
     padding-bottom: 1em;
 }
+
+.competences-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.competence-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.competence {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 2em 3em 2em 3em;
+    margin: 1em;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    padding-bottom: 0.5em;
+}
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    :host {
+        padding: 1em 5em 2em 5em;
+    }
+
+    .competence {
+        padding: 1.5em 1em 1.5em 1em;
+        width: 120px;
+    }
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: 0.5em 2em 0.5em 2em;
+    }
+
+    .competence {
+        padding: 1em 0.5em 1em 0.5em;
+        width: 100px;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
