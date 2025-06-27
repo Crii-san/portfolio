@@ -1,5 +1,6 @@
-import { NgFor, UpperCasePipe } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
 
 interface Contact {
   type: string,
@@ -10,29 +11,29 @@ interface Contact {
 
 @Component({
   selector: 'app-contact',
-  imports: [NgFor, UpperCasePipe],
+  imports: [NgFor, ButtonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
   public contactModes: Contact[] = [
     {
-      type: 'linkedin',
+      type: 'LinkedIn',
       link: 'https://www.linkedin.com/in/christelle-souka/',
       croppedLink: 'linkedin.com/in/christelle-souka/',
-      icon: 'assets/contact/linkedin.webp'
+      icon: 'pi pi-linkedin'
     },
     {
-      type: 'email',
+      type: 'Email',
       link: 'mailto:soukachristelle@gmail.com',
       croppedLink: 'soukachristelle@gmail.com',
-      icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png'
+      icon: 'pi pi-envelope'
     },
     {
-      type: 'github',
+      type: 'GitHub',
       link: 'https://github.com/Crii-san',
       croppedLink: 'github.com/Crii-san',
-      icon: 'assets/contact/github.png'
+      icon: 'pi pi-github'
     }
   ];
 }

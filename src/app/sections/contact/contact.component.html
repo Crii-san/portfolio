@@ -1,12 +1,11 @@
 <h2 id="contact">Contact</h2>
 
-<div class="contacts-list">
-    <a *ngFor="let contact of contactModes" [href]="contact.link" > 
-        <div class="contact"> 
-            <p>{{contact.type | uppercase}}</p>
-            <img [src]="contact.icon"/>
-            {{ contact.croppedLink }}
-        </div>
-    </a>
+<div class="contact-container">
+    <div class="contact" *ngFor="let contact of contactModes" >
+        <a [href]="contact.link" target="_blank" rel="noopener noreferrer"> 
+            <p-button icon="{{contact.icon}}" severity="contrast" size="large" label="{{contact.type}}"/>  
+        </a>
+        <span>{{ contact.croppedLink }}</span>
+    </div>
 </div>
 
