@@ -2,64 +2,81 @@
     display: flex;
     flex-direction: column;
     align-items: center;    
-    padding: 2.5em 10em 3em 10em;
+    padding: 4em 10em 3em 10em;
 }
 
 h2 {
     padding-bottom: 1em;
 }
 
-/* Large screens */
-@media screen and (min-width: 1000px) {
-    .section-container {
-        display: flex;
-        flex-direction: row;
-        text-align: justify;
-    }
+.presentation-container {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
 }
 
 .photo {
     width: fit-content;
     display: flex;
-    padding: 0 3em 0 3em;
+    padding-right: 3em;
+    transition: 0.5s;
+}
+
+.photo:hover {
+    transform: scale(1.05);
 }
 
 img {
-    width: 250px;
+    width: 260px;
+    height: 350px;
     border-radius: 20px;
     border: solid 1px var(--tertiary);
-    margin: auto;
-}
-
-/* Small screens */
-@media screen and (max-width: 1000px) {
-    :host {
-        padding: 2em 5em 2em 5em;
-    }
-    
-    .section-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-    }
-}
-
-/* Phones */
-@media screen and (max-width: 500px) {
-    :host {
-        padding: 0.5em 2em 0.5em 2em;
-    }
-    
-    img {
-        width: 150px;
-        border-radius: 20px;
-        border: solid 1px var(--tertiary);
-        margin: auto;
-    }
 }
 
 .presentation-text {
     margin: auto;
 }
 
+a {
+    padding-top: 2em;
+    transition: 0.5s;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+/* Small screens */
+@media screen and (max-width: 1000px) {
+    :host {
+        padding: 4em 5em 3em 5em;
+    }
+    
+    .presentation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .photo {
+        padding: 0 0 1em 0;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: 0.5em 2em 2em 2em;
+    }
+    
+    img {
+        width: 150px;
+        height: 200px;
+    }
+
+    a {
+        padding-top: 1em;
+    }
+}
