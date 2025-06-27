@@ -1,15 +1,36 @@
 <h2 id="etudes">Études</h2>
 
+<p-timeline [value]="etudes" align="alternate">
+    <ng-template #marker let-event>
+        <span>
+            <i class="pi pi-circle-fill"></i>
+        </span>
+    </ng-template>
+    <ng-template #content let-etude>
+        <p-card [header]="etude.formation" [subheader]="etude.dates">
+            <ul>
+                <li *ngIf="etude.parcours">{{etude.parcours}}</li>
+                <li>{{etude.etablissement}}</li>
+                <li>{{etude.lieu}}</li>
+            </ul>
+            <a [href]="etude.link" target="_blank" rel="noopener noreferrer"> 
+                <p-button severity="contrast" label="En savoir plus" size="small"/>
+            </a>
+        </p-card>
+    </ng-template>
+</p-timeline>
+
 <div class="etudes-container">
-    <div class="etude" *ngFor="let etude of etudes"> 
+    <p-card class="etude" *ngFor="let etude of etudes" [header]="etude.formation" [subheader]="etude.dates"> 
         <div class="etude-data">
-            <h3>{{etude.formation}}</h3>
             <ul>
                 <li *ngIf="etude.parcours">{{etude.parcours}}</li>
                 <li>{{etude.etablissement}}</li>
                 <li>{{etude.lieu}}</li>
             </ul>
         </div>
-        <span>{{etude.dates}}</span>
-    </div>
+        <a [href]="etude.link" target="_blank" rel="noopener noreferrer"> 
+            <p-button severity="contrast" label="En savoir plus" size="small"/>
+        </a>
+    </p-card>
 </div>
