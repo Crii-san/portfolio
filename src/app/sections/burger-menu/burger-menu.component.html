@@ -1,6 +1,6 @@
 <div>
     <div class="section-container" *ngFor="let section of sections">
-        <a href="#" class="section" >{{ section }}</a>
+        <a class="section" (click)="scrollToSection(section.link)">{{ section.name }}</a>
     </div>
 </div>
 
