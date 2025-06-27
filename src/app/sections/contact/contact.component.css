@@ -1,9 +1,9 @@
 :host {
-    background-color: var(--secondary);
-    padding: 2em 10em 3em 10em; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2em 10em 3em 10em; 
+    background-color: var(--secondary);
 }
 
 h2 {
@@ -23,7 +23,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20em;
+    width: 17em;
 }
 
 a {

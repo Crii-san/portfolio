@@ -47,6 +47,10 @@ a {
     justify-content: space-between;
 }
 
+.competence:hover {
+    transform: scale(1.5);
+}
+
 img {
     height: 80px;
     width: 80px;
