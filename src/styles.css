@@ -33,6 +33,20 @@ html {
   scroll-padding-top: 150px; 
 }
 
+.card-etude .p-card .p-card-body {
+    background-color: var(--secondary) !important;
+    color: var(--text);
+    border-radius: 10px;
+}
+
+.card-experience .p-card .p-card-body {
+    background-color: var(--primary) !important;
+    color: var(--text);
+    border-radius: 10px;
+}
+
+
+
 
 
   

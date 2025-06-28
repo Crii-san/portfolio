@@ -17,11 +17,6 @@ ul {
     text-align: start;
 }
 
-::ng-deep .p-card {
-  background-color: var(--secondary);
-  color: var(--text);
-}
-
 .etudes-container {
     display: none;
 }
@@ -50,5 +45,9 @@ ul {
     ::ng-deep .p-card {
         margin: 1em 0 1em 0;
         text-align: center;
+    }
+
+    h2 {
+        padding-bottom: 0;
     }
 }

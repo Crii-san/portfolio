@@ -7,7 +7,7 @@
         </span>
     </ng-template>
     <ng-template #content let-etude>
-        <p-card [header]="etude.formation" [subheader]="etude.dates">
+        <p-card class="card-etude" [header]="etude.formation" [subheader]="etude.dates">
             <ul>
                 <li *ngIf="etude.parcours">{{etude.parcours}}</li>
                 <li>{{etude.etablissement}}</li>
@@ -21,7 +21,7 @@
 </p-timeline>
 
 <div class="etudes-container">
-    <p-card class="etude" *ngFor="let etude of etudes" [header]="etude.formation" [subheader]="etude.dates"> 
+    <p-card class="card-etude" *ngFor="let etude of etudes" [header]="etude.formation" [subheader]="etude.dates"> 
         <div class="etude-data">
             <ul>
                 <li *ngIf="etude.parcours">{{etude.parcours}}</li>
