@@ -29,26 +29,30 @@ h3 {
 }
 
 a {
-    text-decoration: none;
-    color: var(--text);
     display: flex;
-    padding: 2em 2.5em 2em 2.5em;
-    margin: 1em;
-    width: 100px;
-    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    
     background-color: var(--primary);
+    color: var(--text);
+
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+a:hover {
+    transform: scale(1.05);
 }
 
 .competence {
     display: flex;
-    flex: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-.competence:hover {
-    transform: scale(1.5);
 }
 
 img {
@@ -65,8 +69,9 @@ img {
     }
 
     a {
-        padding: 1.5em 1em 1.5em 1em;
+        padding: 1.5em 0.5em 1.5em 0.5em;
         width: 120px;
+        height: 120px;
     }
 
     img {
@@ -79,15 +84,21 @@ img {
 @media screen and (max-width: 500px) {
     :host {
         padding: 0.5em 2em 0.5em 2em;
+        font-size: small;
     }
 
     a {
         padding: 1em 0.5em 1em 0.5em;
         width: 100px; 
+        height: 100px; 
     }
 
     img {
         height: 50px;
         width: 50px;
+    }
+
+    h2 {
+        padding-bottom: 0;
     }
 }
