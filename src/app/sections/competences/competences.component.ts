@@ -42,7 +42,7 @@ export class CompetencesComponent {
     },
     {
       name: "PL/SQL",
-      logo: "assets/competences/languages/plsql.png",
+      logo: "assets/competences/languages/sql.png",
       link: "https://www.oracle.com/database/technologies/appdev/plsql.html",
     },
     {

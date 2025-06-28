@@ -31,7 +31,7 @@ ul {
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
-        padding: 0.5em 2em 2em 2em;
+        padding: 0.5em 2em 0.5em 2em;
     }
 
     p-timeline {

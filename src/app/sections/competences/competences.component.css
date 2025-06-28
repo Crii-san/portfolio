@@ -37,7 +37,7 @@ a {
     color: var(--text);
 
     text-decoration: none;
-    padding: 1em;
+    padding: auto;
     margin: 1em;
     width: 150px;
     height: 150px;
@@ -69,7 +69,6 @@ img {
     }
 
     a {
-        padding: 1.5em 0.5em 1.5em 1em;
         width: 120px;
         height: 120px;
     }
@@ -84,21 +83,19 @@ img {
 @media screen and (max-width: 500px) {
     :host {
         padding: 0.5em 2em 0.5em 2em;
-        font-size: small;
-    }
-
-    a {
-        padding: 1em 0.5em 1em 0.5em;
-        width: 100px; 
-        height: 100px; 
-    }
-
-    img {
-        height: 50px;
-        width: 50px;
     }
 
     h2 {
         padding-bottom: 0;
+    }
+
+    a {
+        width: 120px; 
+        height: 120px; 
+    }
+
+    img {
+        height: 60px;
+        width: 60px;
     }
 }
