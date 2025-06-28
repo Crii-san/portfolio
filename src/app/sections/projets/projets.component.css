@@ -8,3 +8,21 @@
 h2 {
     padding-bottom: 1em;
 }
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    :host {
+        padding: 2em 5em 3em 5em;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: 0.5em 2em 0.5em 2em;
+    }
+
+    h2 {
+        padding-bottom: 0;
+    }
+}

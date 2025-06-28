@@ -14,19 +14,66 @@
     border-bottom: solid 1px var(--tertiary);
 }
 
-/* Large screens */
-@media screen and (min-width: 1300px) {
-    .small-screen { display: none; }
-    .large-screen { display: block; }
 
-    .list-sections {
-        display: flex;
-        flex-direction: row;
-        flex: 1;
-        justify-content: space-between;
-        padding: 0 5em 0 5em;
-        max-width: 700px;
-    }
+.small-screen { display: none; }
+.large-screen { display: block; }
+
+.list-sections {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 5em 0 5em;
+    max-width: 700px;
+}
+
+.switch-theme-button {
+    background-color: transparent;
+    color: var(--text);
+    
+    display: flex;
+    border: none;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+.switch-theme-button:hover {
+    background-color: var(--tertiary);
+    color: var(--text);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.end-nav-bar-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section {
+    padding: 0.5em;
+    transition: 0.3s;
+}
+
+.section:hover {
+    background-color: var(--tertiary);
+    color: var(--text);
+    padding: 0.5em;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 /* Small screens */
@@ -67,41 +114,3 @@
     }
 }
 
-.switch-theme-button {
-    background-color: transparent;
-    color: var(--text);
-    
-    display: flex;
-    border: none;
-    align-items: center;
-    padding: 0.5em;
-    border-radius: 10px;
-}
-.switch-theme-button:hover {
-    background-color: var(--tertiary);
-    color: var(--text);
-    padding: 0.5em;
-    border-radius: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: var(--text);
-}
-
-.end-nav-bar-options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.section {
-    padding: 0.5em;
-}
-
-.section:hover {
-    background-color: var(--tertiary);
-    color: var(--text);
-    padding: 0.5em;
-    border-radius: 10px;
-}
