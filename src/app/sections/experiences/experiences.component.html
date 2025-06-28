@@ -1,17 +1,17 @@
 <h2 id="experiences">Expériences</h2>
 
 <div class="experiences-container">
-    <div class="experience" *ngFor="let experience of experiences"> 
-        <a [href]="experience.site">
-            <img [src]="experience.logo">
-        </a>
-        <div class="experience-data">  
-            <h3>{{experience.poste}}</h3>
-            <h4>{{experience.entreprise}} | {{experience.lieu}}</h4>
-            <ul>
-                <li *ngFor="let tache of experience.taches">{{tache}}</li>
-            </ul>
+    <p-card class="card-experience" *ngFor="let experience of experiences" [header]="experience.poste" [subheader]="experience.entreprise + ' | ' + experience.lieu"> 
+        <div class="var-container">
+            <a [href]="experience.site">
+                <img [src]="experience.logo">
+            </a>
+            <div class="experience-data">  
+                <ul>
+                    <li *ngFor="let tache of experience.taches">{{tache}}</li>
+                </ul>
+            </div>
+            <span>{{experience.dates}}</span>
         </div>
-        <span>{{experience.dates}}</span>
-    </div>
+    </p-card>
 </div>

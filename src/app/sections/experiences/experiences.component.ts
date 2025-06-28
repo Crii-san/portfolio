@@ -1,5 +1,6 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { CardModule } from 'primeng/card';
 
 interface experience {
   entreprise: string,
@@ -13,7 +14,7 @@ interface experience {
 
 @Component({
   selector: 'app-experiences',
-  imports: [NgFor],
+  imports: [NgFor, CardModule],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.css'
 })

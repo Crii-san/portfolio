@@ -16,23 +16,21 @@ h2 {
     width: 100%;
 }
 
-
-.experience {
-    display: flex;
-    flex: 1;
-    border: solid 1px var(--tertiary);
-    border-radius: 20px;
-    padding: 1em 3em 1em 3em;
-    margin: 1em 0 1em 0;
-    flex-direction: row;
-    align-items: center;
+::ng-deep .p-card {
+  margin: 1em 0 1em 0;
 }
 
+.var-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em 1em 0 1em;
+}
 
 .experience-data {
     display: flex;
     flex-direction: column;
-    padding: 0 1em 0 5em;
+    padding: 0 4em 0 5em;
     flex: 1;
 }
 
@@ -42,7 +40,15 @@ h3, h4 {
 }
 
 a {
-    width: 200px;
+    width: fit-content;
+    background-color: white;
+    padding: 0 1em 0 1em;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+a:hover {
+    transform: scale(1.05);
 }
 
 img {
@@ -58,20 +64,20 @@ span {
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {
-        padding: 1em 5em 2em 5em;
+        padding: 2em 5em 3em 5em;
     }
 
-    .experience {
-        padding: 1em 0 1em 0;
+    .var-container {
         flex-direction: column;
+        align-items: center;
+        padding: 2em 0 0 0;
     }
 
     .experience-data {
-        padding: 1em 3em 0 3em;
+        padding: 1em 0 1em 0;
     }
 
     span {
-        padding: 1em 0 1em 0;
         text-align: center;
     }
 }
@@ -82,21 +88,19 @@ span {
         padding: 0.5em 2em 0.5em 2em;
     }
 
-    .experience {
-        padding: 0;
-        flex-direction: column;
+    h2 {
+        padding-bottom: 0;
     }
 
     .experience-data {
-        padding: 1em 1em 0 1em;
-    }
-    
-    span {
-        text-align: center;
-        padding-bottom: 2em;
+        padding: 0 0 1em 0;
     }
 
-    img {
-        padding-top: 1em;
+    ul {
+        text-align: start;
+    }
+
+    .var-container {
+        padding: 0;
     }
 }
