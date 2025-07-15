@@ -34,8 +34,8 @@ a:hover {
     transform: scale(1.05);
 }
 
-span {
-    padding-top: 1em;
+.link-contact {
+    padding-top: 1.5em;
 }
 
 /* Small screens */
@@ -59,7 +59,7 @@ span {
         padding: 0;
     }
 
-    span {
+    .link-contact {
         padding-top: 1em;
         padding-bottom: 2em;
     }

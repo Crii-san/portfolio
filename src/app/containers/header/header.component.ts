@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
     }
   ]
 
-  public theme: string = 'light_mode';
+  public icon: string = 'pi pi-moon';
   private selectorBody!: HTMLBodyElement;
 
   @Output() showBurgerMenuChange: EventEmitter<boolean> = new EventEmitter();
@@ -53,10 +53,10 @@ export class HeaderComponent implements OnInit {
 
   public onToggleDarkMode(): void {
     if (this.selectorBody.classList.contains('dark-mode')) {
-      this.theme = 'dark_mode';
+      this.icon = 'pi pi-moon';
       this.selectorBody.classList.remove('dark-mode');
     } else {
-      this.theme = 'light_mode';
+      this.icon = 'pi pi-sun';
       this.selectorBody.classList.toggle('dark-mode');
     }
   }

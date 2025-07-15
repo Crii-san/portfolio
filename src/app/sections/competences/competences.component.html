@@ -4,7 +4,7 @@
     <section class="languages">
         <h3>Langages</h3>
         <div class="competence-list">
-            <a *ngFor="let language of languages" [href]="language.link" >
+            <a *ngFor="let language of languages" [href]="language.link" target="_blank" rel="noopener noreferrer">
                 <div class="competence">
                     <img [src]="language.logo">
                     {{language.name}}
@@ -16,7 +16,7 @@
     <section class="frameworks">
         <h3>Frameworks & Bibliothèques</h3>
         <div class="competence-list">
-            <a *ngFor="let framework of frameworks" [href]="framework.link" >
+            <a *ngFor="let framework of frameworks" [href]="framework.link" target="_blank" rel="noopener noreferrer">
                 <div class="competence" >
                     <img [src]="framework.logo">
                     {{framework.name}}
@@ -28,7 +28,7 @@
     <section class="database">
         <h3>Bases de données</h3>
         <div class="competence-list">
-            <a *ngFor="let db of database" [href]="db.link" >
+            <a *ngFor="let db of database" [href]="db.link" target="_blank" rel="noopener noreferrer">
                 <div class="competence" >
                     <img [src]="db.logo">
                     {{db.name}}
@@ -40,7 +40,7 @@
     <section class="divers">
         <h3>Divers</h3>
         <div class="competence-list">
-            <a *ngFor="let d of divers" [href]="d.link" >
+            <a *ngFor="let d of divers" [href]="d.link" target="_blank" rel="noopener noreferrer">
                 <div class="competence" >
                     <img [src]="d.logo">
                     {{d.name}}

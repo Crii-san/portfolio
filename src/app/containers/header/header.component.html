@@ -6,11 +6,11 @@
 
 <div class="end-nav-bar-options">
     <button class="switch-theme-button" (click)="onToggleDarkMode()"> 
-        <span class="material-icons">{{ theme }}</span>
+        <span [ngClass]="icon" style="font-size: 1.5rem"></span>
     </button>
     
     <button class="burger-menu small-screen" (click)="onToggleBurgerMenu()">
-        <span class="material-icons">menu</span>
+        <span class="pi pi-bars" style="font-size: 1.5rem"></span>
     </button>
 </div>
 
