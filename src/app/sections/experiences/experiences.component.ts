@@ -21,6 +21,18 @@ interface experience {
 export class ExperiencesComponent {
   public experiences: experience[] = [
     {
+      entreprise: 'Inflexsys',
+      logo: 'assets/experiences/inflexsys.png',
+      site: 'https://www.inflexsys.com/',
+      poste: 'Développeuse web et mobile (Alternance)',
+      lieu: 'Mérignac (33)',
+      dates: "Septembre 2025 - aujourd'hui",
+      taches : [
+        "Développement d'une application mobile",
+        "Développement d’un back-office web",
+      ]
+    },
+    {
       entreprise: 'Numih France (anciennement Mipih)',
       logo: 'assets/experiences/numih-france.png',
       site: 'https://numihfrance.fr/',

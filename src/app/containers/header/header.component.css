@@ -6,7 +6,7 @@
     flex-direction: row;
     padding: 0.5em 10em 0.5em 10em;
     align-items: center;
-    z-index: 9999;
+    z-index: 2;
     justify-content: space-between;
     position: fixed;
     left: 0;

@@ -12,8 +12,6 @@ import { BurgerMenuComponent } from "./sections/burger-menu/burger-menu.componen
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
-
   public showBurgerMenu: boolean = false;
 
   public closeBurgerMenu(): void {

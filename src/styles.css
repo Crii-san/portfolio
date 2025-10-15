@@ -11,7 +11,7 @@
 
 body.dark-mode {
     color-scheme: dark;
-    --primary: #383434;
+    --primary: #2f2f2f;
     --secondary: #212121;
     --tertiary: #181818;
     --text: white;
@@ -28,6 +28,11 @@ body, app-root {
     flex: 1;
     flex-direction: column;
 }
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 
 html {
   scroll-padding-top: 150px; 
