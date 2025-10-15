@@ -57,7 +57,7 @@ img {
 }
 
 span {
-    width: 220px;
+    width: fit-content;
     text-align: end;
 }
 

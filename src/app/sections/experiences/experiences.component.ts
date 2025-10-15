@@ -28,8 +28,8 @@ export class ExperiencesComponent {
       lieu: 'Mérignac (33)',
       dates: "Septembre 2025 - aujourd'hui",
       taches : [
-        "Développement d'une application mobile",
-        "Développement d’un back-office web",
+        "Développement d'une application mobile Flutter",
+        "Maintenance et refactorisation de la partie cliente de deux back-office en Angular",
       ]
     },
     {
