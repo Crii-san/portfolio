@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output, Renderer2 } from '@angular/core';
 import { NgFor } from '@angular/common';
-import { section } from '../../containers/header/header.component';
+import { section } from '../header.component';
 
 @Component({
   selector: 'app-burger-menu',
