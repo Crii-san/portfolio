@@ -8,11 +8,11 @@
     </ng-template>
     <ng-template #content let-etude>
         <p-card class="card-etude" [header]="etude.formation" [subheader]="etude.dates">
-            <ul>
-                <li *ngIf="etude.parcours">{{etude.parcours}}</li>
-                <li>{{etude.etablissement}}</li>
-                <li>{{etude.lieu}}</li>
-            </ul>
+            <div class="infos-etudes">
+                <div *ngIf="etude.parcours">{{etude.parcours}}</div>
+                <div>{{etude.etablissement}}</div>
+                <div>{{etude.lieu}}</div>
+            </div>
             <a [href]="etude.link" target="_blank" rel="noopener noreferrer"> 
                 <p-button severity="contrast" label="En savoir plus" size="small"/>
             </a>

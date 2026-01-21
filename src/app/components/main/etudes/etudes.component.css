@@ -21,6 +21,11 @@ ul {
     display: none;
 }
 
+.infos-etudes {
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+}
+
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {

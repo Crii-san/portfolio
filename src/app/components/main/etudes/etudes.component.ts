@@ -4,7 +4,7 @@ import { Timeline } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 
-interface etude {
+interface Etude {
   formation: string,
   etablissement: string,
   parcours: string | null,
@@ -20,11 +20,11 @@ interface etude {
   styleUrl: './etudes.component.css'
 })
 export class EtudesComponent {
-  public etudes: etude[] = [
+  public etudes: Etude[] = [
     {
       formation: 'Cycle ingénieur en alternance',
       etablissement: 'EFREI (campus de Bordeaux)',
-      parcours: 'Parcours Logiciels et Systèmes d’Information',
+      parcours: 'Majeure Logiciels et Systèmes d’Information',
       lieu: 'Bordeaux (33)',
       dates: '2025 - 2028',
       link: 'https://www.efrei.fr/programme-grande-ecole/cycle-ingenieur-par-apprentissage-lsi-hybride/'
