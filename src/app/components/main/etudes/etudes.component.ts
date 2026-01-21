@@ -35,7 +35,7 @@ export class EtudesComponent {
       parcours: "Parcours réalisation d'applications : conception, développement, validation",
       lieu: 'Reims (51)',
       dates: '2022 - 2025',
-      link: 'https://www.univ-reims.fr/formation/catalogue-de-formation/dut-informatique,23515,38949.html?args=R9qFsCnMmKDtxCa17YTDkHVqaqbfYRXwwTnCVt2witCDUIiVoUdkeMDp%2AXGEGm2SMIhvMbuZ3_kOrRxvJlk6dOorIryuNioRCyFFyPAvhl9tCdwYdtHRrwAvNC1tDg_H&formation_id=17'
+      link: 'https://www.univ-reims.fr/formation/catalogue-de-formation/bachelor-universitaire-de-technologie-informatique,23515,38949.html?args=R9qFsCnMmKDtxCa17YTDkHVqaqbfYRXwwTnCVt2witCDUIiVoUdkeMDp%2AXGEGm2SMIhvMbuZ3_kOrRxvJlk6dOorIryuNioRCyFFyPAvhl9tCdwYdtHRrwAvNC1tDg_H&formation_id=1584&sit_id=1'
     },
     {
       formation: "Licence d'économie et gestion",
@@ -43,7 +43,7 @@ export class EtudesComponent {
       parcours: null,
       lieu: 'Reims (51)',
       dates: '2020 - 2022',
-      link: 'https://www.univ-reims.fr/formation/catalogue-de-formation/licence-economie-et-gestion,23515,38949.html?args=R9qFsCnMmKDtxCa17YTDkHVqaqbfYRXwwTnCVt2witCDUIiVoUdkeMDp%2AXGEGm2SMIhvMbuZ3_kOrRxvJlk6dOorIryuNioRCyFFyPAvhl9tCdwYdtHRrwAvNC1tDg_H&formation_id=37'
+      link: 'https://www.univ-reims.fr/formation/catalogue-de-formation/licence-economie,23515,38949.html?args=R9qFsCnMmKDtxCa17YTDkHVqaqbfYRXwwTnCVt2witCDUIiVoUdkeMDp%2AXGEGm2SMIhvMbuZ3_kOrRxvJlk6dOorIryuNioRCyFFyPAvhl9tCdwYdtHRrwAvNC1tDg_H&formation_id=1487&sit_id=1'
     }
   ]
 }
