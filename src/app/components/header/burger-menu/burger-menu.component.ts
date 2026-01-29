@@ -1,6 +1,10 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output, Renderer2 } from '@angular/core';
 import { NgFor } from '@angular/common';
+<<<<<<< HEAD:src/app/components/header/burger-menu/burger-menu.component.ts
 import { section } from '../header.component';
+=======
+import { Section } from '../../containers/header/header.component';
+>>>>>>> 44f3ae0 (refactor: capital letter for interface):src/app/sections/burger-menu/burger-menu.component.ts
 
 @Component({
   selector: 'app-burger-menu',
@@ -30,7 +34,7 @@ export class BurgerMenuComponent implements AfterViewInit, OnInit, OnDestroy {
   }
 
 
-  public sections: section[] = [
+  public sections: Section[] = [
     {
       name :'À propos',
       link: 'presentation'

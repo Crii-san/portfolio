@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
-interface technology {
+interface Technology {
   name: string,
   logo: string,
   link: string,
@@ -14,7 +14,7 @@ interface technology {
   styleUrl: './competences.component.css'
 })
 export class CompetencesComponent {
-  public languages: technology[] = [
+  public languages: Technology[] = [
     {
       name: "TypeScript",
       logo: "assets/competences/languages/typescript.png",
@@ -62,7 +62,7 @@ export class CompetencesComponent {
     },
   ];
 
-  public frameworks: technology[] = [
+  public frameworks: Technology[] = [
     {
       name: "Symfony",
       logo: "assets/competences/frameworks/symfony.png",
@@ -104,7 +104,7 @@ export class CompetencesComponent {
       link: "https://reactnative.dev/",
     }
   ];
-  public database: technology[] = [
+  public database: Technology[] = [
     {
       name: "Oracle",
       logo: "assets/competences/database/oracle.png",
@@ -141,7 +141,7 @@ export class CompetencesComponent {
       link: "https://www.prisma.io/",
     },
   ];
-  public divers: technology[] = [
+  public divers: Technology[] = [
     {
       name: "Docker",
       logo: "assets/competences/divers/docker.webp",

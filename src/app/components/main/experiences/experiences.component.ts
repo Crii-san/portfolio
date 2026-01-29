@@ -2,7 +2,7 @@ import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { CardModule } from 'primeng/card';
 
-interface experience {
+interface Experience {
   entreprise: string,
   logo: string,
   site: string,
@@ -19,7 +19,7 @@ interface experience {
   styleUrl: './experiences.component.css'
 })
 export class ExperiencesComponent {
-  public experiences: experience[] = [
+  public experiences: Experience[] = [
     {
       entreprise: 'Inflexsys',
       logo: 'assets/experiences/inflexsys.png',

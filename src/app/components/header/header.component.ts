@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
-export interface section {
+export interface Section {
   name: string,
   link: string
 }
@@ -14,7 +14,7 @@ export interface section {
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
-  public sections: section[] = [
+  public sections: Section[] = [
     {
       name :'À propos',
       link: 'presentation'
