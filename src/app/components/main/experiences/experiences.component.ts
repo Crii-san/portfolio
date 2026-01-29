@@ -24,12 +24,13 @@ export class ExperiencesComponent {
       entreprise: 'Inflexsys',
       logo: 'assets/experiences/inflexsys.png',
       site: 'https://www.inflexsys.com/',
-      poste: 'Développeuse web et mobile (Alternance)',
+      poste: 'Développeuse front-end (Alternance)',
       lieu: 'Mérignac (33)',
       dates: "Septembre 2025 - aujourd'hui",
       taches : [
-        "Développement d'une application mobile Flutter",
-        "Maintenance et refactorisation de la partie cliente de deux back-office en Angular",
+        'Participation à la maintenance d’applications web Angular',
+        'Correction de bugs et implémentation d’évolutions fonctionnelles',
+        'Intégration de composants UI' 
       ]
     },
     {
