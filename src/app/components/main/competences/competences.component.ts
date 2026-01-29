@@ -102,12 +102,7 @@ export class CompetencesComponent {
       name: "React Native",
       logo: "assets/competences/frameworks/react.png",
       link: "https://reactnative.dev/",
-    },
-    {
-      name: "Godot",
-      logo: "assets/competences/frameworks/godot.png",
-      link: "https://godotengine.org/fr/",
-    },
+    }
   ];
   public database: technology[] = [
     {
@@ -185,7 +180,12 @@ export class CompetencesComponent {
     {
       name: "GitHub",
       logo: "assets/competences/divers/github.png",
-      link: "https://github.com/",
+      link: "https://github.com/"
+    },
+    {
+      name: "Godot",
+      logo: "assets/competences/frameworks/godot.png",
+      link: "https://godotengine.org/fr/",
     },
   ]
 }
