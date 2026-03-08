@@ -1,47 +1,61 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
+import { TooltipModule } from 'primeng/tooltip';
 
 export interface Section {
   name: string,
-  link: string
+  link: string,
+  icon: string
 }
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ButtonModule, TooltipModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
   public sections: Section[] = [
     {
+      name :'Accueil',
+      link: '#home',
+      icon: 'pi pi-home'
+    },
+    {
       name :'À propos',
-      link: 'presentation'
+      link: '#presentation',
+      icon: 'pi pi-user'
     }, 
     {
       name :'Compétences',
-      link: 'competences'
+      link: '#competences',
+      icon: 'pi pi-wrench'
     },
     {
       name :'Études',
-      link: 'etudes'
+      link: '#etudes',
+      icon: 'pi pi-book'
     },
     {
       name :'Expériences',
-      link: 'experiences'
+      link: '#experiences',
+      icon: 'pi pi-briefcase'
     },
     {
       name :'Projets',
-      link: 'projets'
+      link: '#projets',
+      icon: 'pi pi-code'
     },
     {
       name :'Contact',
-      link: 'contact'
+      link: '#contact',
+      icon: 'pi pi-phone'
     }
   ]
 
-  public icon: string = 'pi pi-moon';
+  public iconName: string = 'pi pi-moon';
   private selectorBody!: HTMLBodyElement;
 
   @Output() showBurgerMenuChange: EventEmitter<boolean> = new EventEmitter();
@@ -53,10 +67,10 @@ export class HeaderComponent implements OnInit {
 
   public onToggleDarkMode(): void {
     if (this.selectorBody.classList.contains('dark-mode')) {
-      this.icon = 'pi pi-moon';
+      this.iconName = 'pi pi-moon';
       this.selectorBody.classList.remove('dark-mode');
     } else {
-      this.icon = 'pi pi-sun';
+      this.iconName = 'pi pi-sun';
       this.selectorBody.classList.toggle('dark-mode');
     }
   }
