@@ -1,0 +1,15 @@
+:host {
+    background-color: var(--primary);
+    color: var(--text);
+
+    display: flex;
+    justify-content: center;
+    padding: 2em 10em 2em 10em; 
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: 0.5em 2em 0.5em 2em;
+    }
+}
