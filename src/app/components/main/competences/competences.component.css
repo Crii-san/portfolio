@@ -2,22 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em 10em 3em 10em;   
-    background-color: var(--secondary);
-}
-
-h2 {
-    padding-bottom: 1em;
+    background-color: var(--primary);
+    padding: var(--section-padding-large-screen);
 }
 
 .competences-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    text-align: center;
-}
-
-h3 {
     text-align: center;
 }
 
@@ -33,7 +25,7 @@ a {
     justify-content: center;
     align-items: center;
     
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: var(--text);
 
     text-decoration: none;

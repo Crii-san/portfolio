@@ -182,10 +182,5 @@ export class CompetencesComponent {
       logo: "assets/competences/divers/github.png",
       link: "https://github.com/"
     },
-    {
-      name: "Godot",
-      logo: "assets/competences/frameworks/godot.png",
-      link: "https://godotengine.org/fr/",
-    },
   ]
 }
