@@ -26,7 +26,7 @@ export class ExperiencesComponent {
       site: 'https://www.inflexsys.com/',
       poste: 'Développeuse front-end (Alternance)',
       lieu: 'Mérignac (33)',
-      dates: "Septembre 2025 - aujourd'hui",
+      dates: "Septembre 2025 - Mars 2026",
       taches : [
         'Participation à la maintenance d’applications web Angular',
         'Correction de bugs et implémentation d’évolutions fonctionnelles',
