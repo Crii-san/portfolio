@@ -8,6 +8,10 @@
     --tertiary: rgb(225, 225, 225);
     --text: #232323;
     --button: #232323;
+
+    --section-padding-large-screen: 15em 25em 5em 25em;
+    --section-padding-small-screen: 2em 5em;
+    --section-padding-phone-screen: 2em 5em;
 }
 
 body.dark-mode {
@@ -40,12 +44,12 @@ html {
     scroll-padding-top: 150px; 
     display: flex;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h2, h3 {
     font-weight: 400;
-    padding: 0.5em;
+    padding: 0.5em 0;
     margin: 0;
 }
 

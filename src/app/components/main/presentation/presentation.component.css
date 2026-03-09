@@ -1,50 +1,17 @@
 :host {
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    padding: 4em 10em 3em 10em;
-}
-
-h2 {
-    padding-bottom: 1em;
+    padding: var(--section-padding-large-screen);
 }
 
 .presentation-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: justify;
-    align-items: center;
-}
-
-.photo {
-    width: fit-content;
-    display: flex;
-    padding-right: 3em;
-    transition: 0.5s;
-}
-
-.photo:hover {
-    transform: scale(1.05);
-}
-
-img {
-    width: 260px;
-    height: 350px;
-    border-radius: 20px;
-    border: solid 1px var(--tertiary);
 }
 
 .presentation-text {
     margin: auto;
-}
-
-a {
-    padding-top: 2em;
-    transition: 0.5s;
-}
-
-a:hover {
-    transform: scale(1.05);
 }
 
 /* Small screens */
@@ -59,24 +26,11 @@ a:hover {
         align-items: center;
         text-align: justify;
     }
-
-    .photo {
-        padding: 0 0 1em 0;
-    }
 }
 
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
         padding: 0.5em 2em 0.5em 2em;
-    }
-    
-    img {
-        width: 150px;
-        height: 200px;
-    }
-
-    a {
-        padding: 0 0 1em 0;
     }
 }
