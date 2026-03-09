@@ -6,15 +6,21 @@
     --primary: white;
     --secondary: rgb(241, 241, 241);
     --tertiary: rgb(225, 225, 225);
-    --text: #2b2b2b;
+    --text: #232323;
+    --button: #232323;
+
+    --section-padding-large-screen: 5em 25em 0 25em;
+    --section-padding-small-screen: 2em 5em;
+    --section-padding-phone-screen: 2em 5em;
 }
 
 body.dark-mode {
     color-scheme: dark;
-    --primary: #2f2f2f;
-    --secondary: #212121;
-    --tertiary: #181818;
+    --primary: #232323;
+    --secondary: #282828;
+    --tertiary: #707070;
     --text: white;
+    --button: white;
 }
 
 html, body {
@@ -35,19 +41,93 @@ body.no-scroll {
 
 
 html {
-  scroll-padding-top: 150px; 
+    scroll-padding-top: 150px; 
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 500;
+    padding: 1.5em 0;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+    padding: 0.5em 0;
+    margin: 0;
 }
 
 .card-etude .p-card .p-card-body {
     background-color: var(--secondary) !important;
-    color: var(--text);
-    border-radius: 10px;
+    border-radius: 10px !important;
+    color: var(--text)  !important;
 }
 
 .card-experience .p-card .p-card-body {
-    background-color: var(--primary) !important;
+    background-color: var(--secondary) !important;
+    border-radius: 10px !important;
+    color: var(--text)  !important;
+}
+
+a {
+    text-decoration: none;
     color: var(--text);
+}
+
+/* button only icon style */
+.button-style-icon {
+    color: var(--text);
+    background-color: var(--primary);
+    border: none;
+    padding: 1em;
+    justify-content: center;
     border-radius: 10px;
+    border: none;
+}
+
+i {
+    font-size: 1.5em !important;
+    color: var(--text);
+    transition: 0.5s;
+}
+
+i:hover {
+    font-size: 1.5em !important;
+    transform: scale(1.3) !important;
+}
+
+/* p-button style with icon */
+.p-button {
+    background-color: var(--button) !important;
+    padding: 1em 2em !important;
+    transition: 0.5s !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.p-button:hover {
+    transform: scale(1.05) !important;
+}
+
+
+/* tooltip style */
+.p-tooltip .p-tooltip-text {
+    background: rgba(245,255,250,0);
+    color: var(--text);
+    border: none;
+    font-family: "Inter", sans-serif;
+    box-shadow: none;
+    border-radius: 0.5em;
+}
+
+.p-tooltip-arrow {
+  display: none;
 }
 
 

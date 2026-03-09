@@ -1,9 +1,13 @@
 :host {
-    background-color: var(--primary);
-    color: var(--text);
-
     display: flex;
     flex-direction: column;
-    flex: 2;
-    padding-top: 5em;
+    flex: 2; 
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: 0.5em 2em 0.5em 2em;
+        padding-top: 4em;
+    }
 }

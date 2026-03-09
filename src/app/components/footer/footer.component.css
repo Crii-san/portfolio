@@ -1,10 +1,9 @@
 :host {
-    background-color: var(--primary);
-    color: var(--text);
-
     display: flex;
     justify-content: center;
-    padding: 2em 10em 2em 10em; 
+    padding: 5em 10em 1em 10em;
+    color: var(--text);
+    background-color: var(--primary);
 }
 
 /* Phones */

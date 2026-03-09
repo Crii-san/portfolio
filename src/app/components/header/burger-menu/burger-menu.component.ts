@@ -1,10 +1,6 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output, Renderer2 } from '@angular/core';
 import { NgFor } from '@angular/common';
-<<<<<<< HEAD:src/app/components/header/burger-menu/burger-menu.component.ts
-import { section } from '../header.component';
-=======
-import { Section } from '../../containers/header/header.component';
->>>>>>> 44f3ae0 (refactor: capital letter for interface):src/app/sections/burger-menu/burger-menu.component.ts
+import { Section } from '../header.component';
 
 @Component({
   selector: 'app-burger-menu',
@@ -36,28 +32,39 @@ export class BurgerMenuComponent implements AfterViewInit, OnInit, OnDestroy {
 
   public sections: Section[] = [
     {
+      name :'Home',
+      link: 'home',
+      icon: 'pi pi-home'
+    },
+    {
       name :'À propos',
-      link: 'presentation'
+      link: 'presentation',
+      icon: 'pi pi-user'
     }, 
     {
       name :'Compétences',
-      link: 'competences'
+      link: 'competences',
+      icon: 'pi pi-wrench'
     },
     {
       name :'Études',
-      link: 'etudes'
+      link: 'etudes',
+      icon: 'pi-book'
     },
     {
       name :'Expériences',
-      link: 'experiences'
+      link: 'experiences',
+      icon: 'pi pi-briefcase'
     },
     {
       name :'Projets',
-      link: 'projets'
+      link: 'projets',
+      icon: 'pi pi-code'
     },
     {
       name :'Contact',
-      link: 'contact'
+      link: 'contact',
+      icon: 'pi pi-mail'
     }
   ]
 

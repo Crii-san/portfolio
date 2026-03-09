@@ -1,4 +1,4 @@
-<h2 id="etudes">Études</h2>
+<h2>Études</h2>
 
 <p-timeline [value]="etudes" align="alternate">
     <ng-template #marker let-event>
@@ -14,7 +14,7 @@
                 <div>{{etude.lieu}}</div>
             </div>
             <a [href]="etude.link" target="_blank" rel="noopener noreferrer"> 
-                <p-button severity="contrast" label="En savoir plus" size="small"/>
+                <p-button label="En savoir plus" size="small"/>
             </a>
         </p-card>
     </ng-template>
@@ -30,7 +30,7 @@
             </ul>
         </div>
         <a [href]="etude.link" target="_blank" rel="noopener noreferrer"> 
-            <p-button severity="contrast" label="En savoir plus" size="small"/>
+            <p-button label="En savoir plus" size="small"/>
         </a>
     </p-card>
 </div>

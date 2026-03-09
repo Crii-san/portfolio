@@ -1,3 +1,11 @@
-:host {
-    font-family: "Inter", sans-serif;
+.main-container {
+    padding-left: 63px;
+}
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    .main-container {
+        padding: 0;
+       padding-bottom: 4em;
+    }
 }

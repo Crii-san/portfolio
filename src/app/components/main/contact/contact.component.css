@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em 10em 3em 10em; 
-    background-color: var(--secondary);
+    padding: 5em 10em 0 10em;
+    background-color: var(--primary);
+    color: var(--text);
 }
 
 h2 {
-    padding-bottom: 1em;
+    font-size: 3em;
+    text-align: center;
+    padding: 0 0 2em 0;
+    margin: 0;
+    font-weight: 400;
 }
 
 .contact-container {
@@ -26,13 +31,7 @@ h2 {
     width: 17em;
 }
 
-a {
-    transition: 0.5s;
-}
 
-a:hover {
-    transform: scale(1.05);
-}
 
 .link-contact {
     padding-top: 1.5em;
