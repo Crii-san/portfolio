@@ -3,13 +3,44 @@
     color: var(--text);
 
     display: flex;
+    height: 100vh;
+
+    flex-direction: column;
     justify-content: center;
-    padding: 2em 10em 2em 10em; 
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    height: 72px;
+    width: 72px;
+}
+
+.contact-icons {
+    padding: 0 1em;
+    align-items: center;
+}
+
+a {
+    padding: 0.5em;
+}
+
+i {
+    font-size: 2em !important;
+}
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    :host {
+        padding: 0;
+        padding-bottom: 64px;
+    }
 }
 
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
-        padding: 0.5em 2em 0.5em 2em;
+        padding: 4em 2em 0.5em 2em;
+        padding: auto;
     }
 }
