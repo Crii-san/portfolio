@@ -1,6 +1,4 @@
 :host {
-    color: var(--primary);
-
     /* effet translucide */
     background-color: rgba(42, 42, 42, 0.117);
     backdrop-filter: blur(20px);
@@ -37,14 +35,6 @@
     padding: 1em;
 }
 
-a {
-    color: var(--text);
-
-    text-decoration: none;
-    padding: 0.5em;
-    transition: 0.3s;
-}
-
 button {
     color: var(--text);
 
@@ -70,16 +60,4 @@ footer {
     display: flex;
     justify-content: center;
     padding: 2em;
-}
-
-/* Phones */
-@media screen and (max-width: 500px) {
-
-    a {
-        padding: 0;
-    }
-
-    .section-container {
-        padding: 1.5em;
-    }
 }

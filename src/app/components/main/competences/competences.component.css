@@ -4,6 +4,7 @@
     align-items: center;
     background-color: var(--primary);
     padding: var(--section-padding-large-screen);
+    color: var(--text);
 }
 
 .competences-container {
@@ -12,6 +13,7 @@
     width: 100%;
     text-align: center;
 }
+
 
 .competence-list {
     display: flex;

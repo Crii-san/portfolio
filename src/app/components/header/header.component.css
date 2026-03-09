@@ -1,6 +1,4 @@
 :host {
-    background-color: var(--primary);
-
     padding: 1em 0.5em;
     height: 100%;
     border-right: solid 1px var(--tertiary);
@@ -8,6 +6,7 @@
     flex-direction: column;
     position: fixed;
     z-index: 1;
+    background-color: var(--primary);
 }
 
 .small-screen { display: none; }
@@ -23,19 +22,17 @@
 @media screen and (max-width: 1300px) {
     :host {
         padding: 0.5em 5em;
-        height: 4em;
+        height: 64px;
         bottom: 0;
-        width: 100%;
         flex-direction: row;
+        border: none;
         border-top: solid 1px var(--tertiary);
-        border-right: none;
     }
 
     .list-sections {
         display: flex;
         flex-direction: row;
         margin: auto;
-        width: 100%;
         justify-content: space-around;
         padding: 0 6em 0 8em;
     } 
@@ -52,7 +49,7 @@
         flex-direction: row;
         justify-content: end;
         top: 0;
-        border-top: none;
+        border: none;
         border-bottom: solid 1px var(--tertiary);
     }
 
@@ -66,7 +63,6 @@
         background-color: transparent;
         color: var(--text);
         display: flex;
-        border: none;
         align-items: center;
         padding: 0.5em;
         border-radius: 10px;

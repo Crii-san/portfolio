@@ -3,17 +3,16 @@
     color: var(--text);
 
     display: flex;
-    height: 100vh;
 
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    padding: var(--section-padding-large-screen);
 }
 
 img {
-    height: 72px;
-    width: 72px;
+    height: 100px;
+    width: 100px;
 }
 
 .contact-icons {
