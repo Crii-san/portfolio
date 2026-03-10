@@ -3,7 +3,6 @@
     color: var(--text);
 
     display: flex;
-
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -32,7 +31,7 @@ i {
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {
-        padding: 0;
+        padding: 0 10em;
         padding-bottom: 64px;
     }
 }
@@ -40,7 +39,7 @@ i {
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
-        padding: 4em 2em 0.5em 2em;
-        padding: auto;
+        height: calc(100vh - 64px) ;
+        padding: 0 0.5em
     }
 }

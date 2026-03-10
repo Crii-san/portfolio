@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { Button } from "primeng/button";
-import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
   selector: 'app-home',
-  imports: [Button, TooltipModule],
+  imports: [Button],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
