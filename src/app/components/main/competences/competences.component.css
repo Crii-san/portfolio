@@ -59,7 +59,7 @@ img {
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {
-        padding: 1em 5em 2em 5em;
+        padding: var(--section-padding-small-screen);
     }
 
     a {
@@ -76,7 +76,7 @@ img {
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
-        padding: 0.5em 2em 0.5em 2em;
+        padding: var(--section-padding-phone-screen);
     }
 
     h2 {

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5em 10em 0 10em;
+    padding: var(----section-padding-large-screen);
     background-color: var(--primary);
     color: var(--text)  !important;
 }
@@ -63,7 +63,7 @@ span {
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {
-        padding: 2em 5em 3em 5em;
+        padding: var(--section-padding-small-screen);
     }
 
     .var-container {
@@ -84,7 +84,7 @@ span {
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
-        padding: 0.5em 2em 0.5em 2em;
+        padding: var(--section-padding-phone-screen);
     }
 
     h2 {
