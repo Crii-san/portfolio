@@ -9,7 +9,7 @@
     --text: #232323;
     --button: #232323;
 
-    --section-padding-large-screen: 2em 25em;
+    --section-padding-large-screen: 3em 25em;
     --section-padding-small-screen: 2em 10em;
     --section-padding-phone-screen: 2em 2em;
 }
@@ -73,6 +73,10 @@ h3 {
     background-color: var(--secondary) !important;
     border-radius: 10px !important;
     color: var(--text)  !important;
+}
+
+.card-experience {
+    margin-bottom: 1em !important;
 }
 
 a {

@@ -7,6 +7,9 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+
+    padding: 8em 25em 10em 25em;
+    border-bottom: 1px solid var(--secondary);
 }
 
 img {
@@ -31,7 +34,7 @@ i {
 @media screen and (max-width: 1300px) {
     :host {
         height: fit-content;
-        padding: 8em 10em 64px 10em;
+        padding: 5em 10em 1em 10em;
     }
 }
 
@@ -39,6 +42,6 @@ i {
 @media screen and (max-width: 500px) {
     :host {
         height: fit-content;
-        padding: 2em 0.5em 0 0.5em;
+        padding: 5em 0.5em 0 0.5em;
     }
 }

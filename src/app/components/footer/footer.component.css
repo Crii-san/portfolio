@@ -1,7 +1,7 @@
 :host {
     display: flex;
     justify-content: center;
-    padding: 5em 10em 1em 10em;
+    padding: 1em 10em 1em 10em;
     color: var(--text);
     background-color: var(--primary);
 }

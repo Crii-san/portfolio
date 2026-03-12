@@ -1,25 +1,22 @@
 :host {
+    background-color: var(--primary);
+    color: var(--text);
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(----section-padding-large-screen);
-    background-color: var(--primary);
-    color: var(--text)  !important;
+    padding: var(--section-padding-large-screen); 
+    border-bottom: 1px solid var(--secondary); 
 }
 
 .experiences-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-::ng-deep .p-card {
-  margin: 1em 0 1em 0;
 }
 
 .var-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 2em 1em 0 1em;
 }
