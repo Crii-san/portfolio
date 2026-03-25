@@ -28,36 +28,18 @@ export class ExperiencesComponent {
       lieu: 'Mérignac (33)',
       dates: "Septembre 2025 - Mars 2026",
       taches : [
-        'Participation à la maintenance d’applications web Angular',
-        'Correction de bugs et implémentation d’évolutions fonctionnelles',
-        'Intégration de composants UI' 
+        'Participation à la maintenance d’applications web Angular, correction de bugs et implémentation d’évolutions fonctionnelles, intégration de composants UI' 
       ]
     },
     {
-      entreprise: 'Numih France (anciennement Mipih)',
+      entreprise: 'Numih France',
       logo: 'assets/experiences/numih-france.png',
       site: 'https://numihfrance.fr/',
-      poste: 'Conceptrice/Développeuse (Alternance)',
+      poste: 'Conceptrice/Développeuse (Stage et alternance)',
       lieu: 'Reims (51)',
-      dates: 'Septembre 2024 - Juin 2025',
+      dates: 'Avril 2024 - Juin 2025',
       taches : [
-        "Participation à la refonte complète d’une application interne utilisée par les équipes métiers",
-        "Conception, proposition et implémentation de nouvelles fonctionnalités pour améliorer l'expérience utilisateur",
-        "Développement d’interfaces avec Angular",
-        "Développement côté serveur avec Java"
-      ]
-    },
-    {
-      entreprise: 'Numih France (anciennement Mipih)',
-      logo: 'assets/experiences/numih-france.png',
-      site: 'https://numihfrance.fr/',
-      poste: 'Développeuse full-stack (Stage)',
-      lieu: 'Reims (51)',
-      dates: 'Avril 2024 - Juin 2024',
-      taches : [
-        "Initiation au framework Angular à travers la conception d'une application basique",
-        "Participation au développement d’un outil de gestion de base de données",
-        "Correction de bugs"
+        "Participation à la refonte complète d’une application interne utilisée par les équipes métiers, conception, proposition et implémentation de nouvelles fonctionnalités pour améliorer l'expérience utilisateur, développement d’interfaces avec Angular, développement côté serveur avec Java"
       ]
     },
   ]

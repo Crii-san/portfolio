@@ -34,7 +34,7 @@ i {
 @media screen and (max-width: 1300px) {
     :host {
         height: fit-content;
-        padding: 5em 10em 1em 10em;
+        padding: 10em;
     }
 }
 
@@ -42,6 +42,6 @@ i {
 @media screen and (max-width: 500px) {
     :host {
         height: fit-content;
-        padding: 5em 0.5em 0 0.5em;
+        padding: 5em 0.5em 5em 0.5em;
     }
 }

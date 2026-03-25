@@ -14,17 +14,10 @@
     flex-direction: column;
 }
 
-.var-container {
+.experience {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2em 1em 0 1em;
-}
-
-.experience-data {
-    display: flex;
-    flex-direction: column;
-    padding: 0 4em 0 5em;
+    padding: 1em 0;
     flex: 1;
 }
 
@@ -35,26 +28,25 @@ h3, h4 {
 
 a {
     width: fit-content;
-    background-color: white;
-    padding: 0 1em 0 1em;
+    background-color: var(--secondary);
+    padding: 1em;
     border-radius: 20px;
     transition: 0.5s;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 a:hover {
     transform: scale(1.05);
 }
 
-img {
-    width: 200px;
-    object-fit: contain;
+p {
+    padding: 0.5em 0;
 }
 
-span {
-    width: fit-content;
-    text-align: end;
+.header-experience {
+    font-weight: 500;
+    font-size: 1.5em;
 }
 
 /* Small screens */

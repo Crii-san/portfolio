@@ -19,7 +19,7 @@
 }
 
 /* Small screens */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     :host {
         padding: var(--section-padding-small-screen);
     }
