@@ -1,12 +1,55 @@
 <h2>Expériences</h2>
 
-<div class="experiences-container">
+<div class="experiences-container large-screen" >
     <div class="experience" *ngFor="let experience of experiences" > 
         <a [href]="experience.site">
-            <p class="header-experience">{{ experience.entreprise }} </p>
-            <p>{{ experience.poste }}</p>
-            <p>{{ experience.taches}}</p>
-            <p>{{ experience.dates }} | {{ experience.lieu }}</p>
+            <div class="header-experience">
+                <div>
+                    <h4>{{ experience.poste }} </h4>
+                    <span>{{ experience.entreprise }}</span>
+                </div>
+                <div>
+                    <p-tag severity="secondary" [value]="experience.typePoste" /> 
+                </div>
+            </div>
+            <div>
+                <div class="icon-experience"><i class="pi pi-calendar"></i> {{ experience.dates }}</div>
+                <div class="icon-experience"><i class="pi pi-map-marker"></i> {{ experience.lieu }}</div>
+                
+                <p>{{ experience.description }}</p>
+                <p class="realisations-cles">Réalisations clés :</p>
+                <ul>
+                    <li *ngFor="let tache of experience.taches"> {{tache}}</li>
+                </ul>
+            </div>
         </a>
     </div>
 </div>
+
+<p-accordion class="card flex justify-center small-screen" value="0" *ngFor="let experience of experiences">
+    <p-accordion-panel [value]="experience.id">
+        <p-accordion-header>
+            <div class="header-experience">
+                <div>
+                    <h4>{{ experience.poste }} </h4>
+                    <span>{{ experience.entreprise }}</span>
+                </div>
+                <div>
+                    <p-tag severity="secondary" [value]="experience.typePoste" /> 
+                </div>
+            </div>
+        </p-accordion-header>
+        <p-accordion-content>
+            <div>
+                <div class="icon-experience"><i class="pi pi-calendar"></i> {{ experience.dates }}</div>
+                <div class="icon-experience"><i class="pi pi-map-marker"></i> {{ experience.lieu }}</div>
+                
+                <p>{{ experience.description }}</p>
+                <p class="realisations-cles">Réalisations clés :</p>
+                <ul>
+                    <li *ngFor="let tache of experience.taches"> {{tache}}</li>
+                </ul>
+            </div>
+        </p-accordion-content>
+    </p-accordion-panel>
+</p-accordion>

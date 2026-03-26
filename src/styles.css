@@ -10,8 +10,12 @@
     --button: #232323;
 
     --section-padding-large-screen: 3em 25em;
-    --section-padding-small-screen: 2em 10em;
-    --section-padding-phone-screen: 2em 2em;
+    --section-padding-small-screen: 3em 10em;
+    --section-padding-phone-screen: 3em 2em;
+
+    --main-color: rgb(219, 50, 219);
+
+    --border-card-style: 1px solid var(--tertiary);
 }
 
 body.dark-mode {
@@ -21,6 +25,7 @@ body.dark-mode {
     --tertiary: #707070;
     --text: white;
     --button: white;
+    --border-card-style: 1px solid rgb(55, 55, 55);
 }
 
 html, body {
@@ -53,15 +58,19 @@ h1 {
 
 h2 {
     font-weight: 500;
-    padding: 1.5em 0;
     margin: 0;
+    font-size: 3em;
+    padding-bottom: 0.5em;
 }
 
-h3 {
-    font-weight: 400;
-    padding: 0.5em 0;
+h3, h4 {
+    font-weight: 500;
+    padding-bottom: 0.2em;
     margin: 0;
+    font-size: 1.5em;
+    color: var(--text) !important;
 }
+
 
 .card-etude .p-card .p-card-body {
     background-color: var(--secondary) !important;
@@ -86,6 +95,16 @@ a {
 
 p {
     margin: 0;
+    padding: 0.5em 0;
+}
+
+li::marker {
+  color: var(--main-color);
+}
+
+ul {
+    padding: 0.5em 1em 0 1em;
+    margin: 0;
 }
 
 /* button only icon style */
@@ -100,7 +119,7 @@ p {
 }
 
 i {
-    font-size: 1.5em !important;
+    font-size: 1.5em;
     color: var(--text);
     transition: 0.5s;
 }
@@ -138,8 +157,26 @@ i:hover {
   display: none;
 }
 
+/* t-tap style */
+.p-tag {
+    background-color: var(--secondary) !important;
+    color: var(--text) !important;
+    font-weight: 500 !important;
+}
 
+/* accordion style */
+.p-accordionheader, .p-accordioncontent-content {
+    background-color: var(--primary) !important;
+    color: var(--text) !important;
+}
 
-
-
+.p-accordionpanel {
+    border-bottom: var(--border-card-style) !important ;
+}
   
+/* Phones */
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 2em;
+    }
+}

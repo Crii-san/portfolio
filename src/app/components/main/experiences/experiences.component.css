@@ -1,13 +1,14 @@
 :host {
-    background-color: var(--primary);
     color: var(--text);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: var(--section-padding-large-screen); 
-    border-bottom: 1px solid var(--secondary); 
 }
+
+.small-screen { display: none; }
+.large-screen { display: block; }
 
 .experiences-container {
     display: flex;
@@ -22,31 +23,47 @@
 }
 
 h3, h4 {
-    padding: 0.5em 0 0.5em 0;
     margin: 0;
 }
 
 a {
-    width: fit-content;
-    background-color: var(--secondary);
-    padding: 1em;
+    padding: 2em;
     border-radius: 20px;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
+    border: var(--border-card-style);
+    flex-grow: 1;
 }
 
 a:hover {
-    transform: scale(1.05);
-}
-
-p {
-    padding: 0.5em 0;
+    transform: scale(1.02);
 }
 
 .header-experience {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+}
+
+span {
+    color: var(--main-color);
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+.icon-experience {
+    padding-bottom: 0.5em;
+    font-size: 0.9em;
+}
+
+.realisations-cles {
+    font-weight: 500;
+}
+
+.external-link {
+    display: flex;
+    justify-content: end;
 }
 
 /* Small screens */
@@ -55,18 +72,13 @@ p {
         padding: var(--section-padding-small-screen);
     }
 
-    .var-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 2em 0 0 0;
+    .header-experience {
+        display: flex;
+        flex-flow: wrap;
     }
 
-    .experience-data {
-        padding: 1em 0 1em 0;
-    }
-
-    span {
-        text-align: center;
+    .p-tag {
+        margin-top: 1em !important;
     }
 }
 
@@ -76,19 +88,14 @@ p {
         padding: var(--section-padding-phone-screen);
     }
 
+    .small-screen { display: block; }
+    .large-screen { display: none; }
+
     h2 {
+        padding-bottom: 1em;
+    }
+
+    .header-experience {
         padding-bottom: 0;
-    }
-
-    .experience-data {
-        padding: 0 0 1em 0;
-    }
-
-    ul {
-        text-align: start;
-    }
-
-    .var-container {
-        padding: 1em 0 0 0;
     }
 }
