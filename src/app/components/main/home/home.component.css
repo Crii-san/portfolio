@@ -8,8 +8,7 @@
     text-align: center;
     justify-content: center;
 
-    padding: 8em 25em 10em 25em;
-    border-bottom: 1px solid var(--secondary);
+    padding: 11em 20em;
 }
 
 img {
@@ -18,7 +17,7 @@ img {
 }
 
 .contact-icons {
-    padding: 0 1em;
+    padding: 1em 1em 0 1em;
     align-items: center;
 }
 
@@ -30,11 +29,22 @@ i {
     font-size: 2em !important;
 }
 
+i:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+p {
+    font-size: 1.5em;
+    padding-top: 0;
+}
+
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {
         height: fit-content;
         padding: 10em;
+        height: 100vh;
     }
 }
 
@@ -42,6 +52,11 @@ i {
 @media screen and (max-width: 500px) {
     :host {
         height: fit-content;
-        padding: 5em 0.5em 5em 0.5em;
+        padding: 5em 2em;
+        height: calc(100vh - 65px);
+    }
+
+    p {
+        font-size: 1.1em;
     }
 }

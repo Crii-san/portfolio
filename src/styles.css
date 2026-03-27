@@ -14,6 +14,7 @@
     --section-padding-phone-screen: 3em 2em;
 
     --main-color: rgb(219, 50, 219);
+    --secondary-color: rgb(225, 163, 225);
 
     --border-card-style: 1px solid var(--tertiary);
 }
@@ -54,6 +55,10 @@ html {
 
 h1 {
     font-weight: 500;
+    font-size: 4em;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+    color: var(--main-color);
 }
 
 h2 {
@@ -118,17 +123,6 @@ ul {
     border: none;
 }
 
-i {
-    font-size: 1.5em;
-    color: var(--text);
-    transition: 0.5s;
-}
-
-i:hover {
-    font-size: 1.5em !important;
-    transform: scale(1.3) !important;
-}
-
 /* p-button style with icon */
 .p-button {
     background-color: var(--button) !important;
@@ -174,8 +168,18 @@ i:hover {
     border-bottom: var(--border-card-style) !important ;
 }
   
+
+/* p-chip style */
+.p-chip {
+    background-color: var(--primary) !important;
+    border: var(--border-card-style) !important;
+}
+
 /* Phones */
 @media screen and (max-width: 500px) {
+    h1 {
+        font-size: 3em;
+    }
     h2 {
         font-size: 2em;
     }
