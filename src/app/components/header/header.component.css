@@ -1,77 +1,74 @@
 :host {
-    padding: 1em 0.5em;
-    height: 100%;
-    border-right: solid 1px var(--tertiary);
+    padding: 0.5em 5em;
+    width: 100%;
+    border-bottom: solid 1px var(--tertiary);
     display: flex;
-    flex-direction: column;
     position: fixed;
     z-index: 1;
+    top: 0;
     background-color: var(--primary);
 }
 
 .small-screen { display: none; }
 .large-screen { display: block; }
 
-.list-sections, .end-nav-bar-options {
+.list-sections {
     display: flex;
-    flex-direction: column;
-    margin-top: auto;
+    margin: auto;
+}
+
+.end-nav-bar-options {
+    display: flex;
+    justify-content: end;
+}
+
+.burger-menu {
+    display: none;
+}
+
+a {
+    padding: 1em;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+i {
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+
+i:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
 }
 
 /* Small screens */
 @media screen and (max-width: 1300px) {
-    :host {
-        padding: 0.5em 5em;
-        height: 64px;
-        bottom: 0;
-        flex-direction: row;
-        border: none;
-        border-top: solid 1px var(--tertiary);
-        width: 100%;
-    }
 
-    .list-sections {
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-    } 
+    :host {
+        padding: 1em 4em;
+        justify-content: end;
+    }
 }
 
 /* Phones */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .small-screen { display: block; }
     .large-screen { display: none; }
 
     :host {
-        padding: 0.5em 2em;
+        padding: 1em 2em;
         display: flex;
-        flex-direction: row;
         justify-content: end;
-        top: 0;
-        border: none;
-        border-bottom: solid 1px var(--tertiary);
-    }
-
-    .end-nav-bar-options {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .burger-menu {
-        background-color: transparent;
-        color: var(--text);
-        display: flex;
-        align-items: center;
-        padding: 0.5em;
-        border-radius: 10px;
-    }
-
-    .burger-menu:hover {
-        background-color: var(--tertiary);
-        color: var(--text);
-        padding: 0.5em;
-        border-radius: 10px;
     }
 }
 

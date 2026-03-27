@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
 import { TooltipModule } from 'primeng/tooltip';
 
 export interface Section {
@@ -12,7 +11,7 @@ export interface Section {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, ButtonModule, TooltipModule],
+  imports: [CommonModule, TooltipModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

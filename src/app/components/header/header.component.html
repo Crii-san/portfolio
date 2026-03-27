@@ -1,17 +1,13 @@
 <nav class="list-sections large-screen">
-    <a *ngFor="let section of sections" [href]="section.link">
-        <button class="button-style-icon" pTooltip="{{section.name}}">
-            <i class="{{section.icon}}"></i>
-        </button>
-    </a>
+    <a *ngFor="let section of sections" [href]="section.link">{{section.name}}</a>
 </nav>
 
 <div class="end-nav-bar-options"> 
-    <button class="button-style-icon switch-theme-button" (click)="onToggleDarkMode()">
+    <button class="switch-theme-button" (click)="onToggleDarkMode()">
         <i class="{{iconName}}"></i>
     </button>
 
-    <button class="button-style-icon burger-menu small-screen" (click)="onToggleBurgerMenu()">
+    <button class="burger-menu small-screen" (click)="onToggleBurgerMenu()">
         <i class="pi pi-bars"></i>
     </button>
 </div>
