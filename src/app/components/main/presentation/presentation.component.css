@@ -5,7 +5,7 @@
     background-color: var(--primary);
     color: var(--text);
 
-    border-bottom: 1px solid var(--secondary);
+    text-align: center;
 }
 
 .presentation-container {

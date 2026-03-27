@@ -9,8 +9,8 @@
     --text: #232323;
     --button: #232323;
 
-    --section-padding-large-screen: 3em 25em;
-    --section-padding-small-screen: 3em 10em;
+    --section-padding-large-screen: 4em 25em;
+    --section-padding-small-screen: 4em 10em;
     --section-padding-phone-screen: 3em 2em;
 
     --main-color: rgb(219, 50, 219);
@@ -70,7 +70,7 @@ h2 {
 
 h3, h4 {
     font-weight: 500;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.5em;
     margin: 0;
     font-size: 1.5em;
     color: var(--text) !important;
