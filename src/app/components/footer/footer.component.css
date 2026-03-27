@@ -1,18 +1,20 @@
 :host {
     display: flex;
-    justify-content: center;
-    padding: 1em 10em 1em 10em;
+    justify-content: space-between;
+    padding: 2em 3em;
     color: var(--text);
     background-color: var(--primary);
+}
+
+p {
+    font-size: small;
+    text-align: center;
 }
 
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
-        padding: 0.5em 2em 0.5em 2em;
-    }
-
-    p {
-        font-size: small;
-    }
+        padding: 1em 1em;
+        flex-direction: column;
+    }  
 }
