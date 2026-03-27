@@ -172,8 +172,11 @@ ul {
 /* p-chip style */
 .p-chip {
     background-color: var(--primary) !important;
+    padding: 0.5em 1em !important;
     border: var(--border-card-style) !important;
+    font-size: small !important;
 }
+
 
 /* Phones */
 @media screen and (max-width: 500px) {
@@ -182,5 +185,6 @@ ul {
     }
     h2 {
         font-size: 2em;
+        padding-bottom: 1em;
     }
 }

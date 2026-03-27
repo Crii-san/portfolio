@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ChipModule } from 'primeng/chip';
 
 interface Technology {
   name: string,
@@ -9,7 +10,7 @@ interface Technology {
 
 @Component({
   selector: 'app-competences',
-  imports: [CommonModule],
+  imports: [CommonModule, ChipModule],
   templateUrl: './competences.component.html',
   styleUrl: './competences.component.css'
 })
