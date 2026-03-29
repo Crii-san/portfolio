@@ -15,7 +15,7 @@ interface Etude {
 
 @Component({
   selector: 'app-etudes',
-  imports: [NgFor, NgIf, Timeline, CardModule, ButtonModule],
+  imports: [NgIf, Timeline, CardModule, ButtonModule, NgFor],
   templateUrl: './etudes.component.html',
   styleUrl: './etudes.component.css'
 })
@@ -32,7 +32,7 @@ export class EtudesComponent {
     {
       formation: 'Bachelor Universitaire de Technologie en Informatique (BUT)',
       etablissement: 'IUT de Reims-Châlons-Charleville',
-      parcours: "Parcours réalisation d'applications : conception, développement, validation",
+      parcours: "Parcours réalisation d'applications",
       lieu: 'Reims (51)',
       dates: '2022 - 2025',
       link: 'https://www.univ-reims.fr/formation/catalogue-de-formation/bachelor-universitaire-de-technologie-informatique,23515,38949.html?args=R9qFsCnMmKDtxCa17YTDkHVqaqbfYRXwwTnCVt2witCDUIiVoUdkeMDp%2AXGEGm2SMIhvMbuZ3_kOrRxvJlk6dOorIryuNioRCyFFyPAvhl9tCdwYdtHRrwAvNC1tDg_H&formation_id=1584&sit_id=1'

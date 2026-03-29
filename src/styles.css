@@ -76,23 +76,6 @@ h3, h4 {
     color: var(--text) !important;
 }
 
-
-.card-etude .p-card .p-card-body {
-    background-color: var(--secondary) !important;
-    border-radius: 10px !important;
-    color: var(--text)  !important;
-}
-
-.card-experience .p-card .p-card-body {
-    background-color: var(--secondary) !important;
-    border-radius: 10px !important;
-    color: var(--text)  !important;
-}
-
-.card-experience {
-    margin-bottom: 1em !important;
-}
-
 a {
     text-decoration: none;
     color: var(--text);
@@ -136,34 +119,20 @@ ul {
     transform: scale(1.05) !important;
 }
 
-
-/* tooltip style */
-.p-tooltip .p-tooltip-text {
-    background: rgba(245,255,250,0);
-    color: var(--text);
-    border: none;
-    font-family: "Inter", sans-serif;
-    box-shadow: none;
-    border-radius: 0.5em;
-}
-
-.p-tooltip-arrow {
-  display: none;
-}
-
-/* t-tap style */
+/* p-tag style */
 .p-tag {
     background-color: var(--secondary) !important;
     color: var(--text) !important;
     font-weight: 500 !important;
 }
 
-/* accordion style */
+/* p-accordion style */
 .p-accordionheader, .p-accordioncontent-content {
     background-color: var(--primary) !important;
     color: var(--text) !important;
 }
 
+/* p-accordionpanel style */
 .p-accordionpanel {
     border-bottom: var(--border-card-style) !important ;
 }
@@ -177,6 +146,19 @@ ul {
     font-size: small !important;
 }
 
+/* card style */
+.card {
+    border-radius: 20px;
+    color: var(--text);
+    border: var(--border-card-style);
+    padding: 1.5em;
+    margin: 0.5em;
+}
+
+/* p-carousel style */
+.p-carousel-item {
+    margin: 0 1em !important;
+}
 
 /* Phones */
 @media screen and (max-width: 500px) {

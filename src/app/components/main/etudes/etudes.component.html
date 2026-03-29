@@ -1,36 +1,36 @@
 <h2>Études</h2>
 
-<p-timeline [value]="etudes" align="alternate">
+<p-timeline class="large-screen" [value]="etudes" align="alternate">
     <ng-template #marker let-event>
         <span>
             <i class="pi pi-circle-fill"></i>
         </span>
     </ng-template>
     <ng-template #content let-etude>
-        <p-card class="card-etude" [header]="etude.formation" [subheader]="etude.dates">
+        <div class="card">
+            <h3>{{etude.formation}}</h3>
+            <span>{{etude.etablissement}}</span>
             <div class="infos-etudes">
                 <div *ngIf="etude.parcours">{{etude.parcours}}</div>
-                <div>{{etude.etablissement}}</div>
-                <div>{{etude.lieu}}</div>
+                <div>{{etude.dates}}</div>
             </div>
             <a [href]="etude.link" target="_blank" rel="noopener noreferrer"> 
                 <p-button label="En savoir plus" size="small"/>
             </a>
-        </p-card>
+        </div>
     </ng-template>
 </p-timeline>
 
-<div class="etudes-container">
-    <p-card class="card-etude" *ngFor="let etude of etudes" [header]="etude.formation" [subheader]="etude.dates"> 
-        <div class="etude-data">
-            <ul>
-                <li *ngIf="etude.parcours">{{etude.parcours}}</li>
-                <li>{{etude.etablissement}}</li>
-                <li>{{etude.lieu}}</li>
-            </ul>
+<div class="small-screen">
+     <div class="card" *ngFor="let etude of etudes">
+        <h3>{{etude.formation}}</h3>
+        <span>{{etude.etablissement}}</span>
+        <div class="infos-etudes">
+            <div *ngIf="etude.parcours">{{etude.parcours}}</div>
+            <div>{{etude.dates}}</div>
         </div>
         <a [href]="etude.link" target="_blank" rel="noopener noreferrer"> 
             <p-button label="En savoir plus" size="small"/>
         </a>
-    </p-card>
+    </div>
 </div>

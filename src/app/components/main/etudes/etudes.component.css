@@ -5,28 +5,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--section-padding-large-screen);
-    border-bottom: 1px solid var(--secondary);
+    padding: 4em 20em;
 }
 
-ul {
-    text-align: start;
-}
-
-.etudes-container {
-    display: none;
-}
+.small-screen { display: none; }
+.large-screen { display: block; }
 
 .infos-etudes {
+    padding: 1em 0;
+}
+
+span { 
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.card {
     text-align: center;
-    padding: 1em 0 1.5em 0;
 }
 
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {
-        padding: var(----section-padding-small-screen);
+        padding: var(--section-padding-small-screen);
     }
+
+    .small-screen { display: block; }
+    .large-screen { display: none; }
 }
 
 /* Phones */
@@ -35,20 +40,6 @@ ul {
         padding: var(--section-padding-phone-screen);
     }
 
-    p-timeline {
-        display: none;
-    }
-
-    .etudes-container {
-        display: contents;
-    }
-
-    ::ng-deep .p-card {
-        margin: 1em 0 1em 0;
-        text-align: center;
-    }
-
-    h2 {
-        padding-bottom: 0;
-    }
+    .small-screen { display: block; }
+    .large-screen { display: none; }
 }
