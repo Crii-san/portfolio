@@ -4,11 +4,3 @@
     flex: 2; 
     background-color: var(--primary);
 }
-
-/* Phones */
-@media screen and (max-width: 500px) {
-    :host {
-        padding: 0;
-        padding-top: 64px;
-    }
-}

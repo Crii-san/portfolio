@@ -9,6 +9,8 @@
     justify-content: center;
 
     padding: 11em 20em;
+    height: calc(100vh - 68px);
+    margin-top: 65px;
 }
 
 img {
@@ -42,18 +44,14 @@ p {
 /* Small screens */
 @media screen and (max-width: 1300px) {
     :host {
-        height: fit-content;
         padding: 10em;
-        height: 100vh;
     }
 }
 
 /* Phones */
 @media screen and (max-width: 500px) {
     :host {
-        height: fit-content;
         padding: 5em 2em;
-        height: calc(100vh - 65px);
     }
 
     p {
