@@ -109,7 +109,7 @@ ul {
 /* p-button style with icon */
 .p-button {
     background-color: var(--button) !important;
-    padding: 1em 2em !important;
+    padding: 1em 1.5em !important;
     transition: 0.5s !important;
     border-radius: 10px !important;
     border: none !important;
