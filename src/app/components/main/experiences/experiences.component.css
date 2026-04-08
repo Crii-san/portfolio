@@ -27,8 +27,6 @@ h3, h4 {
 }
 
 a {
-    padding: 2em;
-    border-radius: 20px;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -91,11 +89,8 @@ span {
     .small-screen { display: block; }
     .large-screen { display: none; }
 
-    h2 {
+    .header-experience {
         padding-bottom: 1em;
     }
 
-    .header-experience {
-        padding-bottom: 0;
-    }
 }

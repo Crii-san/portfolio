@@ -7,14 +7,12 @@
     --secondary: rgb(241, 241, 241);
     --tertiary: rgb(225, 225, 225);
     --text: #232323;
-    --button: #232323;
 
     --section-padding-large-screen: 4em 25em;
     --section-padding-small-screen: 4em 10em;
     --section-padding-phone-screen: 3em 2em;
 
-    --main-color: rgb(219, 50, 219);
-    --secondary-color: rgb(225, 163, 225);
+    --main-color: #2662D9;
 
     --border-card-style: 1px solid var(--tertiary);
 }
@@ -25,12 +23,12 @@ body.dark-mode {
     --secondary: #282828;
     --tertiary: #707070;
     --text: white;
-    --button: white;
     --border-card-style: 1px solid rgb(55, 55, 55);
 }
 
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -108,7 +106,7 @@ ul {
 
 /* p-button style with icon */
 .p-button {
-    background-color: var(--button) !important;
+    background-color: var(--main-color) !important;
     padding: 1em 1.5em !important;
     transition: 0.5s !important;
     border-radius: 10px !important;
@@ -117,6 +115,10 @@ ul {
 
 .p-button:hover {
     transform: scale(1.05) !important;
+}
+
+.p-button-label, .p-button-icon {
+    color: white !important;
 }
 
 /* p-tag style */
@@ -130,11 +132,13 @@ ul {
 .p-accordionheader, .p-accordioncontent-content {
     background-color: var(--primary) !important;
     color: var(--text) !important;
+    border: none !important;
+    padding: 0 !important;
 }
 
 /* p-accordionpanel style */
 .p-accordionpanel {
-    border-bottom: var(--border-card-style) !important ;
+    border: none !important;
 }
   
 
@@ -143,7 +147,8 @@ ul {
     background-color: var(--primary) !important;
     padding: 0.5em 1em !important;
     border: var(--border-card-style) !important;
-    font-size: small !important;
+    font-size: 14px !important;
+    margin: 0.2em;
 }
 
 /* card style */
@@ -153,11 +158,6 @@ ul {
     border: var(--border-card-style);
     padding: 1.5em;
     margin: 0.5em;
-}
-
-/* p-carousel style */
-.p-carousel-item {
-    margin: 0 1em !important;
 }
 
 /* Phones */

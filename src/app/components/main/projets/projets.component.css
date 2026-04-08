@@ -3,17 +3,13 @@
     flex-direction: column;
     align-items: center;
     padding: var(--section-padding-large-screen);
-    background-color: var(--secondary);
     color: var(--text);
 }
 
 p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-span {
-    padding: 0.5em;
+    text-align: center;
+    padding-top: 2em;
+    font-weight: 400;
 }
 
 /* Small screens */
@@ -29,7 +25,7 @@ span {
         padding: var(--section-padding-phone-screen);
     }
 
-    h2 {
-        padding-bottom: 0;
+    app-carousel, span {
+        display: none;
     }
 }

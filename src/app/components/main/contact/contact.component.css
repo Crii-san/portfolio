@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em 15em;
-    background-color: var(--primary);
-    color: var(--text);
-    border-bottom: 1px solid var(--secondary);
+    padding: 10em 15em;
+    background-color: var(--main-color);
+    color: white;
 }
 
 h2 {
@@ -33,7 +32,27 @@ h2 {
 
 span {
     padding: 1em 0;
-    font-weight: 500;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--text);
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+i {
+    padding-right: 10px;
+    font-size: 1.2em;
 }
 
 /* Small screens */

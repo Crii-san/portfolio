@@ -4,6 +4,7 @@
     padding: 2em 3em;
     color: var(--text);
     background-color: var(--primary);
+    border-top: 1px solid var(--secondary);
 }
 
 p {

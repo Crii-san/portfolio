@@ -2,7 +2,7 @@
 
 <div class="experiences-container large-screen" >
     <div class="experience" *ngFor="let experience of experiences" > 
-        <a [href]="experience.site">
+        <a [href]="experience.site" class="card">
             <div class="header-experience">
                 <div>
                     <h4>{{ experience.poste }} </h4>
@@ -31,7 +31,7 @@
         <p-accordion-header>
             <div class="header-experience">
                 <div>
-                    <h4>{{ experience.poste }} </h4>
+                    <h3>{{ experience.poste }} </h3>
                     <span>{{ experience.entreprise }}</span>
                 </div>
                 <div>

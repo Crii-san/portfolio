@@ -46,7 +46,7 @@ export class ExperiencesComponent {
       entreprise: 'Numih France',
       logo: 'assets/experiences/numih-france.png',
       site: 'https://numihfrance.fr/',
-      poste: 'Conceptrice/Développeuse',
+      poste: 'Conceptrice / Développeuse',
       typePoste: 'Stage et Alternance',
       lieu: 'Reims (51)',
       dates: 'Avril 2024 - Juin 2025',

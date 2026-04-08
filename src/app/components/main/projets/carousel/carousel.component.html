@@ -1,0 +1,19 @@
+<div class="carousel">
+  <button class="button-style-icon" (click)="prev()">
+    <i class="pi pi-angle-left"></i>
+  </button>
+
+  <div class="projet card">
+    <!-- <img [src]="projets[currentIndex].image" alt="image projet" /> -->
+    <div class="project-image"></div>
+    <h4>{{ projets[currentIndex].name }}</h4>
+    <p class="project-description">{{ projets[currentIndex].description }}</p>
+    @for (technology of projets[currentIndex].technologies; track $index) {
+      <p-chip [label]="technology"></p-chip>
+    }
+  </div>
+
+  <button class="button-style-icon" (click)="next()">
+    <i class="pi pi-angle-right"></i>
+  </button>
+</div>
