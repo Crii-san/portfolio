@@ -7,6 +7,12 @@
 
 i {
   font-size: 4em;
+  color: lightgray;
+}
+
+/*
+i {
+  font-size: 4em;
   color: var(--text);
   transition: 0.5s;
 }
@@ -14,21 +20,26 @@ i {
 i:hover {
   color: var(--main-color);
 }
+*/
 
 .projet {
   margin: 0 10px;
 }
 
 .project-image {
-  background-color: var(--tertiary);
+  background-color: var(--main-color);
   width: 100%;
-  height: 300px;
   border-radius: 10px;
+  border: var(--border-card-style);
 }
 
 h4 {
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-bottom: 0;
+}
+
+.technologie-chips {
+  padding-bottom: 0.5em;
 }
 
 /* Small screens */

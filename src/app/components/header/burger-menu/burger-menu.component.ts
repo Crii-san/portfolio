@@ -32,7 +32,7 @@ export class BurgerMenuComponent implements AfterViewInit, OnInit, OnDestroy {
 
   public sections: Section[] = [
     {
-      name :'Home',
+      name :'Accueil',
       link: 'home',
       icon: 'pi pi-home'
     },

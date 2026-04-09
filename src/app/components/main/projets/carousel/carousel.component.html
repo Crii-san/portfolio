@@ -4,13 +4,18 @@
   </button>
 
   <div class="projet card">
-    <!-- <img [src]="projets[currentIndex].image" alt="image projet" /> -->
-    <div class="project-image"></div>
+    <img class="project-image" [src]="projets[currentIndex].image" alt="image projet" />
     <h4>{{ projets[currentIndex].name }}</h4>
     <p class="project-description">{{ projets[currentIndex].description }}</p>
-    @for (technology of projets[currentIndex].technologies; track $index) {
-      <p-chip [label]="technology"></p-chip>
-    }
+    <div class="technologie-chips">
+      @for (technology of projets[currentIndex].technologies; track $index) {
+        <p-chip [label]="technology"></p-chip>
+      }
+    </div>
+
+    <a [href]="projets[currentIndex].link" target="_blank" rel="noopener noreferrer"> 
+      <p-button label="Github" size="small" icon="pi pi-github" />
+    </a>
   </div>
 
   <button class="button-style-icon" (click)="next()">

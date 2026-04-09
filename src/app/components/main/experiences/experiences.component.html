@@ -38,6 +38,13 @@
                     <p-tag severity="secondary" [value]="experience.typePoste" /> 
                 </div>
             </div>
+            <ng-template #toggleicon let-active="active">
+                @if (active) {
+                    <i class="pi pi-minus"></i>
+                } @else {
+                    <i class="pi pi-plus"></i>
+                }
+            </ng-template>
         </p-accordion-header>
         <p-accordion-content>
             <div>

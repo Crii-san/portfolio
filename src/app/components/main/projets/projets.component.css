@@ -6,10 +6,8 @@
     color: var(--text);
 }
 
-p {
-    text-align: center;
-    padding-top: 2em;
-    font-weight: 400;
+.phone {
+    display: none;
 }
 
 /* Small screens */
@@ -25,7 +23,20 @@ p {
         padding: var(--section-padding-phone-screen);
     }
 
-    app-carousel, span {
+    app-carousel {
         display: none;
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .technologie-chips {
+        padding-bottom: 0.5em;
     }
 }

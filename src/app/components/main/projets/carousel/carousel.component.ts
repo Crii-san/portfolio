@@ -2,12 +2,13 @@
 import { Component, Input } from '@angular/core';
 import { Projet } from '../projets.component';
 import { ChipModule } from 'primeng/chip';
+import { Button } from "primeng/button";
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
-  imports: [ChipModule]
+  imports: [ChipModule, Button]
 })
 export class CarouselComponent {
   @Input() projets: Projet[] = [];
