@@ -1,0 +1,60 @@
+:host {
+    background-color: var(--primary);
+    color: var(--text);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding: 11em 20em;
+    height: calc(100vh - 65px);
+    margin-top: 65px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.contact-icons {
+    padding: 1em 1em 0 1em;
+    align-items: center;
+}
+
+a {
+    padding: 0.5em;
+}
+
+i {
+    font-size: 2em !important;
+}
+
+i:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+p {
+    font-size: 1.5em;
+    padding-top: 0;
+}
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    :host {
+        padding: 10em;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: 5em 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}

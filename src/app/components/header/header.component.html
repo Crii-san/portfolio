@@ -1,0 +1,17 @@
+<nav class="list-sections large-screen">
+    <a *ngFor="let section of sections" [href]="section.link">{{section.name}}</a>
+</nav>
+
+<div class="end-nav-bar-options"> 
+    <button class="switch-theme-button button-style-icon" (click)="onToggleDarkMode()">
+        <i class="{{iconName}}"></i>
+    </button>
+
+    <button class="burger-menu small-screen button-style-icon" (click)="onToggleBurgerMenu()">
+        <i class="pi pi-bars"></i>
+    </button>
+</div>
+
+
+
+

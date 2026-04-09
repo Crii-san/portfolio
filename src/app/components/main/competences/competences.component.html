@@ -1,0 +1,39 @@
+<h2>Compétences</h2>
+
+<div class="competences-container">
+    <section class="languages">
+        <h3><i class="pi pi-code"></i>Langages</h3>
+        <div class="competence-list">
+            <a *ngFor="let language of languages" [href]="language.link" target="_blank" rel="noopener noreferrer">
+                <p-chip [label]="language.name" />
+            </a>
+        </div>
+    </section>
+
+    <section class="frameworks">
+        <h3><i class="pi pi-th-large"> </i>Frameworks & Bibliothèques</h3>
+        <div class="competence-list">
+            <a *ngFor="let framework of frameworks" [href]="framework.link" target="_blank" rel="noopener noreferrer">
+                <p-chip [label]="framework.name" />
+            </a>
+        </div>
+    </section>
+
+    <section class="database">
+        <h3><i class="pi pi-database"></i>Bases de données</h3>
+        <div class="competence-list">
+            <a *ngFor="let db of database" [href]="db.link" target="_blank" rel="noopener noreferrer">
+                <p-chip [label]="db.name" />
+            </a>
+        </div>
+    </section>
+
+    <section class="divers">
+        <h3><i class="pi pi-box"> </i>Divers</h3>
+        <div class="competence-list">
+            <a *ngFor="let d of divers" [href]="d.link" target="_blank" rel="noopener noreferrer">
+                <p-chip [label]="d.name" />
+            </a>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    padding: var(--section-padding-large-screen);
+    background-color: var(--primary);
+    color: var(--text);
+
+    text-align: center;
+}
+
+.presentation-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-text {
+    margin: auto;
+    text-align: justify;
+}
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    :host {
+        padding: var(--section-padding-small-screen);
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: var(--section-padding-phone-screen);
+    }
+}

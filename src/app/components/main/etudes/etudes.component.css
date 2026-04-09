@@ -1,0 +1,45 @@
+:host {
+    color: var(--text);
+    background-color: var(--primary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 20em;
+}
+
+.small-screen { display: none; }
+.large-screen { display: block; }
+
+.infos-etudes {
+    padding: 1em 0;
+}
+
+span { 
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.card {
+    text-align: center;
+}
+
+/* Small screens */
+@media screen and (max-width: 1300px) {
+    :host {
+        padding: var(--section-padding-small-screen);
+    }
+
+    .small-screen { display: block; }
+    .large-screen { display: none; }
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    :host {
+        padding: var(--section-padding-phone-screen);
+    }
+
+    .small-screen { display: block; }
+    .large-screen { display: none; }
+}

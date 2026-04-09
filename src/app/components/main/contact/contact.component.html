@@ -1,0 +1,16 @@
+<h2>
+    À la recherche d’une apprentie en développement informatique ? Contactez-moi !
+</h2>
+
+<div class="contact-container">
+    <div class="contact" *ngFor="let contact of contactModes" >
+        <a [href]="contact.link" target="_blank" rel="noopener noreferrer"> 
+            <button>
+                <i [class]="contact.icon"></i>
+                {{contact.type}}
+            </button>
+        </a>
+        <span>{{ contact.croppedLink }}</span>
+    </div>
+</div>
+

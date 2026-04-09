@@ -6,19 +6,30 @@
     --primary: white;
     --secondary: rgb(241, 241, 241);
     --tertiary: rgb(225, 225, 225);
-    --text: #2b2b2b;
+    --text: #232323;
+
+    --section-padding-large-screen: 4em 25em;
+    --section-padding-small-screen: 4em 10em;
+    --section-padding-phone-screen: 3em 2em;
+
+    --main-color: #2662D9;
+    --secondary-color: #7c9cdd;
+
+    --border-card-style: 1px solid var(--tertiary);
 }
 
 body.dark-mode {
     color-scheme: dark;
-    --primary: #2f2f2f;
-    --secondary: #212121;
-    --tertiary: #181818;
+    --primary: #232323;
+    --secondary: #282828;
+    --tertiary: #707070;
     --text: white;
+    --border-card-style: 1px solid rgb(55, 55, 55);
 }
 
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -35,23 +46,128 @@ body.no-scroll {
 
 
 html {
-  scroll-padding-top: 150px; 
+    scroll-padding-top: 150px; 
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
 
-.card-etude .p-card .p-card-body {
+h1 {
+    font-weight: 500;
+    font-size: 4em;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+    color: var(--main-color);
+}
+
+h2 {
+    font-weight: 500;
+    margin: 0;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+h3, h4 {
+    font-weight: 500;
+    padding-bottom: 0.5em;
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--text) !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+p {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+li::marker {
+  color: var(--main-color);
+}
+
+ul {
+    padding: 0.5em 1em 0 1em;
+    margin: 0;
+}
+
+/* button only icon style */
+.button-style-icon {
+    color: var(--text);
+    background-color: var(--primary);
+    border: none;
+    padding: 1em;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+}
+
+/* p-button style with icon */
+.p-button {
+    background-color: var(--main-color) !important;
+    padding: 1em 1.5em !important;
+    transition: 0.5s !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.p-button:hover {
+    transform: scale(1.05) !important;
+}
+
+.p-button-label, .p-button-icon {
+    color: white !important;
+}
+
+/* p-tag style */
+.p-tag {
     background-color: var(--secondary) !important;
-    color: var(--text);
-    border-radius: 10px;
+    color: var(--text) !important;
+    font-weight: 500 !important;
 }
 
-.card-experience .p-card .p-card-body {
+/* p-accordion style */
+.p-accordionheader, .p-accordioncontent-content {
     background-color: var(--primary) !important;
-    color: var(--text);
-    border-radius: 10px;
+    color: var(--text) !important;
+    border: none !important;
+    padding: 0 !important;
 }
 
-
-
-
-
+/* p-accordionpanel style */
+.p-accordionpanel {
+    border: none !important;
+}
   
+
+/* p-chip style */
+.p-chip {
+    background-color: var(--primary) !important;
+    padding: 0.5em 1em !important;
+    border: var(--border-card-style) !important;
+    font-size: 14px !important;
+    margin: 0.2em;
+}
+
+/* card style */
+.card {
+    border-radius: 20px;
+    color: var(--text);
+    border: var(--border-card-style);
+    padding: 1.5em;
+    margin: 0.5em;
+}
+
+/* Phones */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
+}
